@@ -6,11 +6,13 @@ import XCTest
 class CounterViewModelTests: XCTestCase {
     var counterViewModel: CounterViewModel!
     var mockCounterLogicController: MockCounterLogicController!
+    var mockCounterView: MockCounterView!
 
     override func setUp() {
         super.setUp()
+        mockCounterView = MockCounterView()
         mockCounterLogicController = MockCounterLogicController()
-        counterViewModel = CounterViewModel(view: nil, logicController: mockCounterLogicController)
+        counterViewModel = CounterViewModel(view: mockCounterView, logicController: mockCounterLogicController)
     }
 
     func testShouldInitializeWithZeroText() {
@@ -20,9 +22,10 @@ class CounterViewModelTests: XCTestCase {
         XCTAssertEqual(String(randomNumber), counterViewModel.countText)
     }
 
-    func testShouldIncrementOnTap() {
+    func testShouldIncrementOnTapAndReportBack() {
         counterViewModel.tap()
 
         XCTAssertEqual(1, mockCounterLogicController.incrementCallCount)
+        XCTAssertEqual(1, mockCounterView.showDataCallCount)
     }
 }

@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		364ACCE6234FA66900260E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364ACCE5234FA66900260E25 /* AppDelegate.swift */; };
-		364ACCE8234FA66900260E25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364ACCE7234FA66900260E25 /* ViewController.swift */; };
 		364ACCEB234FA66900260E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCE9234FA66900260E25 /* Main.storyboard */; };
 		364ACCED234FA66A00260E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCEC234FA66A00260E25 /* Assets.xcassets */; };
-		364ACCF0234FA66A00260E25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCEE234FA66A00260E25 /* LaunchScreen.storyboard */; };
 		364ACCFB234FA66B00260E25 /* ClickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364ACCFA234FA66B00260E25 /* ClickerTests.swift */; };
+		36C4B80D234FD07B003BC64C /* MockCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80C234FD07B003BC64C /* MockCounterView.swift */; };
+		36C4B80F234FD31A003BC64C /* CounterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80E234FD31A003BC64C /* CounterPageViewController.swift */; };
+		36C4B811234FE758003BC64C /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B810234FE758003BC64C /* Dependencies.swift */; };
+		36C4B813234FEAA4003BC64C /* CounterPageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B812234FEAA4003BC64C /* CounterPageViewControllerTests.swift */; };
+		36C4B815234FEADB003BC64C /* MockCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B814234FEADB003BC64C /* MockCounterViewModel.swift */; };
 		36FD0655234FA95700CF676C /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD0654234FA95700CF676C /* CounterViewModel.swift */; };
 		36FD0657234FA96700CF676C /* CounterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD0656234FA96700CF676C /* CounterViewModelTests.swift */; };
 		36FD065A234FAA2100CF676C /* CounterLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD0659234FAA2100CF676C /* CounterLogicController.swift */; };
@@ -33,14 +36,17 @@
 /* Begin PBXFileReference section */
 		364ACCE2234FA66900260E25 /* Clicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364ACCE5234FA66900260E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		364ACCE7234FA66900260E25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		364ACCEA234FA66900260E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		364ACCEC234FA66A00260E25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		364ACCEF234FA66A00260E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		364ACCF1234FA66A00260E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		364ACCF6234FA66B00260E25 /* ClickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		364ACCFA234FA66B00260E25 /* ClickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerTests.swift; sourceTree = "<group>"; };
 		364ACCFC234FA66B00260E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36C4B80C234FD07B003BC64C /* MockCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCounterView.swift; sourceTree = "<group>"; };
+		36C4B80E234FD31A003BC64C /* CounterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterPageViewController.swift; sourceTree = "<group>"; };
+		36C4B810234FE758003BC64C /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		36C4B812234FEAA4003BC64C /* CounterPageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterPageViewControllerTests.swift; sourceTree = "<group>"; };
+		36C4B814234FEADB003BC64C /* MockCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCounterViewModel.swift; sourceTree = "<group>"; };
 		36FD0654234FA95700CF676C /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		36FD0656234FA96700CF676C /* CounterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModelTests.swift; sourceTree = "<group>"; };
 		36FD0659234FAA2100CF676C /* CounterLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterLogicController.swift; sourceTree = "<group>"; };
@@ -71,6 +77,7 @@
 			children = (
 				364ACCE4234FA66900260E25 /* Clicker */,
 				364ACCF9234FA66B00260E25 /* ClickerTests */,
+				36C4B816234FEB56003BC64C /* HeadlessFunctionalTests */,
 				364ACCE3234FA66900260E25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,11 +98,10 @@
 				36FD0658234FAA1500CF676C /* Model */,
 				36FD0652234FA93900CF676C /* View */,
 				364ACCE5234FA66900260E25 /* AppDelegate.swift */,
-				364ACCE7234FA66900260E25 /* ViewController.swift */,
 				364ACCE9234FA66900260E25 /* Main.storyboard */,
 				364ACCEC234FA66A00260E25 /* Assets.xcassets */,
-				364ACCEE234FA66A00260E25 /* LaunchScreen.storyboard */,
 				364ACCF1234FA66A00260E25 /* Info.plist */,
+				36C4B810234FE758003BC64C /* Dependencies.swift */,
 			);
 			path = Clicker;
 			sourceTree = "<group>";
@@ -112,10 +118,18 @@
 			path = ClickerTests;
 			sourceTree = "<group>";
 		};
+		36C4B816234FEB56003BC64C /* HeadlessFunctionalTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HeadlessFunctionalTests;
+			sourceTree = "<group>";
+		};
 		36FD0652234FA93900CF676C /* View */ = {
 			isa = PBXGroup;
 			children = (
 				36FD0654234FA95700CF676C /* CounterViewModel.swift */,
+				36C4B80E234FD31A003BC64C /* CounterPageViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				36FD0656234FA96700CF676C /* CounterViewModelTests.swift */,
+				36C4B812234FEAA4003BC64C /* CounterPageViewControllerTests.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				36FD065F234FAD3F00CF676C /* MockCounterLogicController.swift */,
+				36C4B80C234FD07B003BC64C /* MockCounterView.swift */,
+				36C4B814234FEADB003BC64C /* MockCounterViewModel.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -240,7 +257,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				364ACCF0234FA66A00260E25 /* LaunchScreen.storyboard in Resources */,
 				364ACCED234FA66A00260E25 /* Assets.xcassets in Resources */,
 				364ACCEB234FA66900260E25 /* Main.storyboard in Resources */,
 			);
@@ -260,9 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				364ACCE8234FA66900260E25 /* ViewController.swift in Sources */,
 				36FD065A234FAA2100CF676C /* CounterLogicController.swift in Sources */,
 				364ACCE6234FA66900260E25 /* AppDelegate.swift in Sources */,
+				36C4B80F234FD31A003BC64C /* CounterPageViewController.swift in Sources */,
+				36C4B811234FE758003BC64C /* Dependencies.swift in Sources */,
 				36FD0655234FA95700CF676C /* CounterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FD065D234FAA7400CF676C /* CounterLogicControllerTests.swift in Sources */,
+				36C4B815234FEADB003BC64C /* MockCounterViewModel.swift in Sources */,
 				364ACCFB234FA66B00260E25 /* ClickerTests.swift in Sources */,
+				36C4B813234FEAA4003BC64C /* CounterPageViewControllerTests.swift in Sources */,
+				36C4B80D234FD07B003BC64C /* MockCounterView.swift in Sources */,
 				36FD0660234FAD3F00CF676C /* MockCounterLogicController.swift in Sources */,
 				36FD0657234FA96700CF676C /* CounterViewModelTests.swift in Sources */,
 			);
@@ -295,14 +315,6 @@
 				364ACCEA234FA66900260E25 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		364ACCEE234FA66A00260E25 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				364ACCEF234FA66A00260E25 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
