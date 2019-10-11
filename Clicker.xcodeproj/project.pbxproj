@@ -16,6 +16,7 @@
 		36C4B811234FE758003BC64C /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B810234FE758003BC64C /* Dependencies.swift */; };
 		36C4B813234FEAA4003BC64C /* CounterPageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B812234FEAA4003BC64C /* CounterPageViewControllerTests.swift */; };
 		36C4B815234FEADB003BC64C /* MockCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B814234FEADB003BC64C /* MockCounterViewModel.swift */; };
+		36C4B81C2350A885003BC64C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B81B2350A885003BC64C /* main.swift */; };
 		36FD0655234FA95700CF676C /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD0654234FA95700CF676C /* CounterViewModel.swift */; };
 		36FD0657234FA96700CF676C /* CounterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD0656234FA96700CF676C /* CounterViewModelTests.swift */; };
 		36FD065A234FAA2100CF676C /* CounterLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD0659234FAA2100CF676C /* CounterLogicController.swift */; };
@@ -47,6 +48,7 @@
 		36C4B810234FE758003BC64C /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		36C4B812234FEAA4003BC64C /* CounterPageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterPageViewControllerTests.swift; sourceTree = "<group>"; };
 		36C4B814234FEADB003BC64C /* MockCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCounterViewModel.swift; sourceTree = "<group>"; };
+		36C4B81B2350A885003BC64C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		36FD0654234FA95700CF676C /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		36FD0656234FA96700CF676C /* CounterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModelTests.swift; sourceTree = "<group>"; };
 		36FD0659234FAA2100CF676C /* CounterLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterLogicController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				364ACCEC234FA66A00260E25 /* Assets.xcassets */,
 				364ACCF1234FA66A00260E25 /* Info.plist */,
 				36C4B810234FE758003BC64C /* Dependencies.swift */,
+				36C4B81B2350A885003BC64C /* main.swift */,
 			);
 			path = Clicker;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				36FD065A234FAA2100CF676C /* CounterLogicController.swift in Sources */,
 				364ACCE6234FA66900260E25 /* AppDelegate.swift in Sources */,
+				36C4B81C2350A885003BC64C /* main.swift in Sources */,
 				36C4B80F234FD31A003BC64C /* CounterPageViewController.swift in Sources */,
 				36C4B811234FE758003BC64C /* Dependencies.swift in Sources */,
 				36FD0655234FA95700CF676C /* CounterViewModel.swift in Sources */,
