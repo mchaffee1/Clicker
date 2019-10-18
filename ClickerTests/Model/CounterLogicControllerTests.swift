@@ -5,13 +5,24 @@ import XCTest
 
 class CounterLogicControllerTests: XCTestCase {
     var counterLogicController: CounterLogicController!
+    var mockCounterRepository: MockCounterRepository!
+    var randomInt: Int!
 
     override func setUp() {
         super.setUp()
-        counterLogicController = CounterLogicController()
+        randomInt = Int.random(in: Int.min...Int.max)
+        mockCounterRepository = MockCounterRepository()
+        mockCounterRepository.mockGetValue = randomInt
+        
+        counterLogicController = CounterLogicController(counterRepository: mockCounterRepository)
     }
 
-    func testShouldInitializeToZero() {
-        XCTAssertEqual(0, counterLogicController.get())
+    func testShouldInitializeToRepositoryValue() {
+        XCTAssertEqual(randomInt, counterLogicController.get())
+    }
+    
+    func testShouldSetIncrementedRepositoryValue() {
+        counterLogicController.increment()
+        XCTAssertEqual(1 + randomInt, mockCounterRepository.setCalls.last)
     }
 }

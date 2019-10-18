@@ -2,17 +2,29 @@ import Foundation
 
 protocol CounterLogicControllerType {
     func get() -> Int
-    func increment() -> Int
+    func increment()
+}
+
+protocol CounterRepositoryType {
+    func get() -> Int
+    func set(newValue: Int)
 }
 
 class CounterLogicController: CounterLogicControllerType {
     public static let shared = CounterLogicController()
 
-    func get() -> Int {
-        return 0
+    private let counterRepository: CounterRepositoryType
+
+    init(counterRepository: CounterRepositoryType = InMemoryCounterRepository()) {
+        self.counterRepository = counterRepository
     }
 
-    func increment() -> Int {
-        return 0
+    func get() -> Int {
+        return counterRepository.get()
+    }
+
+    func increment() {
+        let currentValue = counterRepository.get()
+        counterRepository.set(newValue: 1 + currentValue)
     }
 }

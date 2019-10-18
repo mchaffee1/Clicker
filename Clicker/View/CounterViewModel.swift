@@ -18,7 +18,7 @@ struct CounterViewModel: CounterViewModelType {
     }
 
     func tap() {
-        _ = counterLogicController.increment()
+        counterLogicController.increment()
         view?.showData(from: self)
     }
 

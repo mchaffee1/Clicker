@@ -10,7 +10,13 @@
 		364ACCE6234FA66900260E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364ACCE5234FA66900260E25 /* AppDelegate.swift */; };
 		364ACCEB234FA66900260E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCE9234FA66900260E25 /* Main.storyboard */; };
 		364ACCED234FA66A00260E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCEC234FA66A00260E25 /* Assets.xcassets */; };
-		364ACCFB234FA66B00260E25 /* ClickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364ACCFA234FA66B00260E25 /* ClickerTests.swift */; };
+		36732EB323592DDA0050A066 /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4A7FE2358FF9B00E0BC48 /* CounterTests.swift */; };
+		36732EB423592EC20050A066 /* MockCounterLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD065F234FAD3F00CF676C /* MockCounterLogicController.swift */; };
+		36732EB523592EC20050A066 /* MockCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80C234FD07B003BC64C /* MockCounterView.swift */; };
+		36732EB623592EC20050A066 /* MockCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B814234FEADB003BC64C /* MockCounterViewModel.swift */; };
+		36732EB8235930290050A066 /* InMemoryCounterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36732EB7235930290050A066 /* InMemoryCounterRepository.swift */; };
+		36732EBA235930D50050A066 /* CounterRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36732EB9235930D50050A066 /* CounterRepositoryTests.swift */; };
+		36732EBC235931F20050A066 /* MockCounterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36732EBB235931F20050A066 /* MockCounterRepository.swift */; };
 		36C4B80D234FD07B003BC64C /* MockCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80C234FD07B003BC64C /* MockCounterView.swift */; };
 		36C4B80F234FD31A003BC64C /* CounterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80E234FD31A003BC64C /* CounterPageViewController.swift */; };
 		36C4B811234FE758003BC64C /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B810234FE758003BC64C /* Dependencies.swift */; };
@@ -32,6 +38,13 @@
 			remoteGlobalIDString = 364ACCE1234FA66900260E25;
 			remoteInfo = Clicker;
 		};
+		36732EAE23592DCE0050A066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 364ACCDA234FA66900260E25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364ACCE1234FA66900260E25;
+			remoteInfo = Clicker;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -41,14 +54,19 @@
 		364ACCEC234FA66A00260E25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		364ACCF1234FA66A00260E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		364ACCF6234FA66B00260E25 /* ClickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		364ACCFA234FA66B00260E25 /* ClickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerTests.swift; sourceTree = "<group>"; };
 		364ACCFC234FA66B00260E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36732EA923592DCE0050A066 /* ClickerFunctionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerFunctionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36732EAD23592DCE0050A066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36732EB7235930290050A066 /* InMemoryCounterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCounterRepository.swift; sourceTree = "<group>"; };
+		36732EB9235930D50050A066 /* CounterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterRepositoryTests.swift; sourceTree = "<group>"; };
+		36732EBB235931F20050A066 /* MockCounterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCounterRepository.swift; sourceTree = "<group>"; };
 		36C4B80C234FD07B003BC64C /* MockCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCounterView.swift; sourceTree = "<group>"; };
 		36C4B80E234FD31A003BC64C /* CounterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterPageViewController.swift; sourceTree = "<group>"; };
 		36C4B810234FE758003BC64C /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		36C4B812234FEAA4003BC64C /* CounterPageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterPageViewControllerTests.swift; sourceTree = "<group>"; };
 		36C4B814234FEADB003BC64C /* MockCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCounterViewModel.swift; sourceTree = "<group>"; };
 		36C4B81B2350A885003BC64C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		36D4A7FE2358FF9B00E0BC48 /* CounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTests.swift; sourceTree = "<group>"; };
 		36FD0654234FA95700CF676C /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		36FD0656234FA96700CF676C /* CounterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModelTests.swift; sourceTree = "<group>"; };
 		36FD0659234FAA2100CF676C /* CounterLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterLogicController.swift; sourceTree = "<group>"; };
@@ -71,6 +89,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36732EA623592DCE0050A066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +105,7 @@
 				364ACCE4234FA66900260E25 /* Clicker */,
 				364ACCF9234FA66B00260E25 /* ClickerTests */,
 				36C4B816234FEB56003BC64C /* HeadlessFunctionalTests */,
+				36732EAA23592DCE0050A066 /* ClickerFunctionalTests */,
 				364ACCE3234FA66900260E25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +115,7 @@
 			children = (
 				364ACCE2234FA66900260E25 /* Clicker.app */,
 				364ACCF6234FA66B00260E25 /* ClickerTests.xctest */,
+				36732EA923592DCE0050A066 /* ClickerFunctionalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,15 +142,23 @@
 				36FD065E234FAD2C00CF676C /* Mocks */,
 				36FD065B234FAA6100CF676C /* Model */,
 				36FD0653234FA94200CF676C /* View */,
-				364ACCFA234FA66B00260E25 /* ClickerTests.swift */,
 				364ACCFC234FA66B00260E25 /* Info.plist */,
 			);
 			path = ClickerTests;
 			sourceTree = "<group>";
 		};
+		36732EAA23592DCE0050A066 /* ClickerFunctionalTests */ = {
+			isa = PBXGroup;
+			children = (
+				36732EAD23592DCE0050A066 /* Info.plist */,
+			);
+			path = ClickerFunctionalTests;
+			sourceTree = "<group>";
+		};
 		36C4B816234FEB56003BC64C /* HeadlessFunctionalTests */ = {
 			isa = PBXGroup;
 			children = (
+				36D4A7FE2358FF9B00E0BC48 /* CounterTests.swift */,
 			);
 			path = HeadlessFunctionalTests;
 			sourceTree = "<group>";
@@ -150,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				36FD0659234FAA2100CF676C /* CounterLogicController.swift */,
+				36732EB7235930290050A066 /* InMemoryCounterRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				36FD065C234FAA7400CF676C /* CounterLogicControllerTests.swift */,
+				36732EB9235930D50050A066 /* CounterRepositoryTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +205,7 @@
 				36FD065F234FAD3F00CF676C /* MockCounterLogicController.swift */,
 				36C4B80C234FD07B003BC64C /* MockCounterView.swift */,
 				36C4B814234FEADB003BC64C /* MockCounterViewModel.swift */,
+				36732EBB235931F20050A066 /* MockCounterRepository.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -217,6 +255,24 @@
 			productReference = 364ACCF6234FA66B00260E25 /* ClickerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		36732EA823592DCE0050A066 /* ClickerFunctionalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36732EB223592DCE0050A066 /* Build configuration list for PBXNativeTarget "ClickerFunctionalTests" */;
+			buildPhases = (
+				36732EA523592DCE0050A066 /* Sources */,
+				36732EA623592DCE0050A066 /* Frameworks */,
+				36732EA723592DCE0050A066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36732EAF23592DCE0050A066 /* PBXTargetDependency */,
+			);
+			name = ClickerFunctionalTests;
+			productName = ClickerFunctionalTests;
+			productReference = 36732EA923592DCE0050A066 /* ClickerFunctionalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -231,6 +287,10 @@
 						CreatedOnToolsVersion = 10.3;
 					};
 					364ACCF5234FA66B00260E25 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 364ACCE1234FA66900260E25;
+					};
+					36732EA823592DCE0050A066 = {
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = 364ACCE1234FA66900260E25;
 					};
@@ -251,6 +311,7 @@
 			targets = (
 				364ACCE1234FA66900260E25 /* Clicker */,
 				364ACCF5234FA66B00260E25 /* ClickerTests */,
+				36732EA823592DCE0050A066 /* ClickerFunctionalTests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,6 +333,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36732EA723592DCE0050A066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -281,6 +349,7 @@
 			files = (
 				36FD065A234FAA2100CF676C /* CounterLogicController.swift in Sources */,
 				364ACCE6234FA66900260E25 /* AppDelegate.swift in Sources */,
+				36732EB8235930290050A066 /* InMemoryCounterRepository.swift in Sources */,
 				36C4B81C2350A885003BC64C /* main.swift in Sources */,
 				36C4B80F234FD31A003BC64C /* CounterPageViewController.swift in Sources */,
 				36C4B811234FE758003BC64C /* Dependencies.swift in Sources */,
@@ -292,13 +361,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36732EBC235931F20050A066 /* MockCounterRepository.swift in Sources */,
 				36FD065D234FAA7400CF676C /* CounterLogicControllerTests.swift in Sources */,
 				36C4B815234FEADB003BC64C /* MockCounterViewModel.swift in Sources */,
-				364ACCFB234FA66B00260E25 /* ClickerTests.swift in Sources */,
+				36732EBA235930D50050A066 /* CounterRepositoryTests.swift in Sources */,
 				36C4B813234FEAA4003BC64C /* CounterPageViewControllerTests.swift in Sources */,
 				36C4B80D234FD07B003BC64C /* MockCounterView.swift in Sources */,
 				36FD0660234FAD3F00CF676C /* MockCounterLogicController.swift in Sources */,
 				36FD0657234FA96700CF676C /* CounterViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36732EA523592DCE0050A066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36732EB423592EC20050A066 /* MockCounterLogicController.swift in Sources */,
+				36732EB323592DDA0050A066 /* CounterTests.swift in Sources */,
+				36732EB523592EC20050A066 /* MockCounterView.swift in Sources */,
+				36732EB623592EC20050A066 /* MockCounterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +390,11 @@
 			isa = PBXTargetDependency;
 			target = 364ACCE1234FA66900260E25 /* Clicker */;
 			targetProxy = 364ACCF7234FA66B00260E25 /* PBXContainerItemProxy */;
+		};
+		36732EAF23592DCE0050A066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 364ACCE1234FA66900260E25 /* Clicker */;
+			targetProxy = 36732EAE23592DCE0050A066 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -514,6 +600,44 @@
 			};
 			name = Release;
 		};
+		36732EB023592DCE0050A066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ClickerFunctionalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.chaf.ClickerFunctionalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clicker.app/Clicker";
+			};
+			name = Debug;
+		};
+		36732EB123592DCE0050A066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ClickerFunctionalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.chaf.ClickerFunctionalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clicker.app/Clicker";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -540,6 +664,15 @@
 			buildConfigurations = (
 				364ACD03234FA66B00260E25 /* Debug */,
 				364ACD04234FA66B00260E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36732EB223592DCE0050A066 /* Build configuration list for PBXNativeTarget "ClickerFunctionalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36732EB023592DCE0050A066 /* Debug */,
+				36732EB123592DCE0050A066 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

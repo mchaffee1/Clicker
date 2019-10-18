@@ -17,15 +17,19 @@ class CounterViewModelTests: XCTestCase {
 
     func testShouldInitializeWithZeroText() {
         let randomNumber = Int.random(in: 0...Int.max)
-        mockCounterLogicController.mockGet = randomNumber
+        mockCounterLogicController.mockGetValue = randomNumber
 
         XCTAssertEqual(String(randomNumber), counterViewModel.countText)
     }
 
     func testShouldIncrementOnTapAndReportBack() {
+        let randomInt = Int.random(in: Int.min...Int.max)
+        mockCounterLogicController.mockGetValue = randomInt
+        
         counterViewModel.tap()
 
         XCTAssertEqual(1, mockCounterLogicController.incrementCallCount)
         XCTAssertEqual(1, mockCounterView.showDataCallCount)
+        XCTAssertEqual(String(randomInt), counterViewModel.countText)
     }
 }

@@ -12,9 +12,18 @@ class CounterPageViewControllerTests: XCTestCase {
         super.setUp()
         mockCounterViewModel = MockCounterViewModel()
         counterPageViewController = CounterPageViewController()
+//        counterPageViewController.viewModel = mockCounterViewModel
     }
 
+    func testShouldGetAndDisplayViewModelCountOnLoad() {
+        counterPageViewController.viewDidLoad()
+        
+        XCTAssertEqual(1, mockCounterViewModel.countTextGetCount)
+    }
+    
     func testShouldCallViewModelOnTap() {
-
+//        counterPageViewController.tap(UITapGestureRecognizer())
+//
+//        XCTAssertEqual(1, mockCounterViewModel.tapCallCount)
     }
 }
