@@ -17,6 +17,8 @@
 		36732EB8235930290050A066 /* InMemoryCounterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36732EB7235930290050A066 /* InMemoryCounterRepository.swift */; };
 		36732EBA235930D50050A066 /* CounterRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36732EB9235930D50050A066 /* CounterRepositoryTests.swift */; };
 		36732EBC235931F20050A066 /* MockCounterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36732EBB235931F20050A066 /* MockCounterRepository.swift */; };
+		36732EC1235CCE870050A066 /* DependenciesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36732EC0235CCE870050A066 /* DependenciesTests.swift */; };
+		36732EC3235F7FDD0050A066 /* MockDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36732EC2235F7FDD0050A066 /* MockDependencies.swift */; };
 		36C4B80D234FD07B003BC64C /* MockCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80C234FD07B003BC64C /* MockCounterView.swift */; };
 		36C4B80F234FD31A003BC64C /* CounterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80E234FD31A003BC64C /* CounterPageViewController.swift */; };
 		36C4B811234FE758003BC64C /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B810234FE758003BC64C /* Dependencies.swift */; };
@@ -60,6 +62,8 @@
 		36732EB7235930290050A066 /* InMemoryCounterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCounterRepository.swift; sourceTree = "<group>"; };
 		36732EB9235930D50050A066 /* CounterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterRepositoryTests.swift; sourceTree = "<group>"; };
 		36732EBB235931F20050A066 /* MockCounterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCounterRepository.swift; sourceTree = "<group>"; };
+		36732EC0235CCE870050A066 /* DependenciesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesTests.swift; sourceTree = "<group>"; };
+		36732EC2235F7FDD0050A066 /* MockDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDependencies.swift; sourceTree = "<group>"; };
 		36C4B80C234FD07B003BC64C /* MockCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCounterView.swift; sourceTree = "<group>"; };
 		36C4B80E234FD31A003BC64C /* CounterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterPageViewController.swift; sourceTree = "<group>"; };
 		36C4B810234FE758003BC64C /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 				36FD065B234FAA6100CF676C /* Model */,
 				36FD0653234FA94200CF676C /* View */,
 				364ACCFC234FA66B00260E25 /* Info.plist */,
+				36732EC0235CCE870050A066 /* DependenciesTests.swift */,
 			);
 			path = ClickerTests;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				36C4B80C234FD07B003BC64C /* MockCounterView.swift */,
 				36C4B814234FEADB003BC64C /* MockCounterViewModel.swift */,
 				36732EBB235931F20050A066 /* MockCounterRepository.swift */,
+				36732EC2235F7FDD0050A066 /* MockDependencies.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -361,9 +367,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36732EC1235CCE870050A066 /* DependenciesTests.swift in Sources */,
 				36732EBC235931F20050A066 /* MockCounterRepository.swift in Sources */,
 				36FD065D234FAA7400CF676C /* CounterLogicControllerTests.swift in Sources */,
 				36C4B815234FEADB003BC64C /* MockCounterViewModel.swift in Sources */,
+				36732EC3235F7FDD0050A066 /* MockDependencies.swift in Sources */,
 				36732EBA235930D50050A066 /* CounterRepositoryTests.swift in Sources */,
 				36C4B813234FEAA4003BC64C /* CounterPageViewControllerTests.swift in Sources */,
 				36C4B80D234FD07B003BC64C /* MockCounterView.swift in Sources */,

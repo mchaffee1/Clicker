@@ -7,11 +7,14 @@ import XCTest
 class CounterPageViewControllerTests: XCTestCase {
     var mockCounterViewModel: MockCounterViewModel!
     var counterPageViewController: CounterPageViewController!
+    var mockDependencies: MockDependencies!
 
     override func setUp() {
         super.setUp()
         mockCounterViewModel = MockCounterViewModel()
         counterPageViewController = CounterPageViewController()
+        mockDependencies = MockDependencies()
+        counterPageViewController.dependencies = mockDependencies
 //        counterPageViewController.viewModel = mockCounterViewModel
     }
 

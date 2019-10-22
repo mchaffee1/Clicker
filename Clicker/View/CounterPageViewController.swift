@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 class CounterPageViewController: UIViewController, CounterViewType {
-    let dependencies: DependenciesType = Dependencies.shared
+    var dependencies: DependenciesType = Dependencies.shared
     // TODO replace with delegate/datasource situation
     private var viewModel: CounterViewModelType?
 
@@ -10,7 +10,7 @@ class CounterPageViewController: UIViewController, CounterViewType {
         guard self.viewModel == nil else {
             return
         }
-        self.viewModel = CounterViewModel(view: self, logicController: dependencies.counterLogicController)
+        self.viewModel = dependencies.getCounterViewModel(for: self)
     }
 
     @IBOutlet weak var countLabel: UILabel?
