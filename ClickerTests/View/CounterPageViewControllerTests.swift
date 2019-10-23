@@ -8,25 +8,32 @@ class CounterPageViewControllerTests: XCTestCase {
     var mockCounterViewModel: MockCounterViewModel!
     var counterPageViewController: CounterPageViewController!
     var mockDependencies: MockDependencies!
+    var mockLabel: MockUILabel!
 
     override func setUp() {
         super.setUp()
-        mockCounterViewModel = MockCounterViewModel()
+        mockLabel = MockUILabel()
         counterPageViewController = CounterPageViewController()
         mockDependencies = MockDependencies()
+        mockCounterViewModel = mockDependencies.mockCounterViewModel
         counterPageViewController.dependencies = mockDependencies
-//        counterPageViewController.viewModel = mockCounterViewModel
+        counterPageViewController.countLabel = mockLabel
     }
 
     func testShouldGetAndDisplayViewModelCountOnLoad() {
+        let randomInt = Int.random(in: 0...100)
+        mockCounterViewModel.mockCount = randomInt
+        
         counterPageViewController.viewDidLoad()
         
-        XCTAssertEqual(1, mockCounterViewModel.countTextGetCount)
+        XCTAssertEqual(String(randomInt), mockLabel.text)
     }
     
     func testShouldCallViewModelOnTap() {
-//        counterPageViewController.tap(UITapGestureRecognizer())
-//
-//        XCTAssertEqual(1, mockCounterViewModel.tapCallCount)
+        counterPageViewController.viewDidLoad()
+
+        counterPageViewController.tap(UITapGestureRecognizer())
+
+        XCTAssertEqual(1, mockCounterViewModel.tapCallCount)
     }
 }

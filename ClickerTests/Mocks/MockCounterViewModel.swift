@@ -3,12 +3,12 @@ import Foundation
 @testable import Clicker
 
 class MockCounterViewModel: CounterViewModelType {
-    var countTextGetValue = 0
+    var mockCount = 0
     var countTextGetCount = 0
     var countText: String {
         get {
-            countTextGetCount += 1
-            return String(countTextGetValue)
+            self.countTextGetCount += 1
+            return String(mockCount)
         }
     }
 

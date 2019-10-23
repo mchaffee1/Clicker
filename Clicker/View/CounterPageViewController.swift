@@ -7,20 +7,20 @@ class CounterPageViewController: UIViewController, CounterViewType {
     private var viewModel: CounterViewModelType?
 
     override func viewDidLoad() {
-        guard self.viewModel == nil else {
-            return
-        }
-        self.viewModel = dependencies.getCounterViewModel(for: self)
+        super.viewDidLoad()
+        let viewModel = dependencies.getCounterViewModel(for: self)
+        showData(from: viewModel)
+        self.viewModel = viewModel
     }
 
-    @IBOutlet weak var countLabel: UILabel?
+    @IBOutlet weak var countLabel: UILabelType?
 
     @IBAction func tap(_ sender: UITapGestureRecognizer) {
         tap()
     }
 
     private func tap() {
-
+        viewModel?.tap()
     }
 
     func showData(from viewModel: CounterViewModelType) {

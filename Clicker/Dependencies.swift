@@ -17,6 +17,6 @@ class Dependencies: DependenciesType {
     let counterLogicController: CounterLogicControllerType = CounterLogicController()
     
     func getCounterViewModel(for view: CounterViewType?) -> CounterViewModelType {
-        return CounterViewModel(view: nil)
+        return CounterViewModel(view: view)
     }
 }
