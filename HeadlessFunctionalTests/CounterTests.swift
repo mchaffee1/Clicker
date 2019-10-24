@@ -4,19 +4,22 @@ import XCTest
 @testable import Clicker
 
 class CounterTests: XCTestCase {
+    var dependencies: DependenciesType!
+    
     var mockCounterView: MockCounterView!
     
-    var counterLogicController: CounterLogicController!
-    var counterViewModel: CounterViewModel!
+    var counterViewModel: CounterViewModelType!
     
     override func setUp() {
+        dependencies = Dependencies()
         mockCounterView = MockCounterView()
-        counterLogicController = CounterLogicController.shared
         
-        counterViewModel = CounterViewModel(view: mockCounterView)
+        counterViewModel = dependencies.getCounterViewModel(for: mockCounterView)
     }
     
     func testShouldIncrementCountOnTap() {
+        XCTAssertEqual("0", counterViewModel.countText)
+
         counterViewModel.tap()
         
         XCTAssertEqual(1, mockCounterView.showDataCallCount)
