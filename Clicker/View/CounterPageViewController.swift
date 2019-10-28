@@ -3,7 +3,6 @@ import UIKit
 
 class CounterPageViewController: UIViewController, CounterViewType {
     var dependencies: DependenciesType = Dependencies.shared
-    // TODO replace with delegate/datasource situation
     private var viewModel: CounterViewModelType?
 
     override func viewDidLoad() {
