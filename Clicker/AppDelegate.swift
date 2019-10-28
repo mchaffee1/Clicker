@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Clicker
-//
-//  Created by Chaffee, Michael (NonEmp) on 2019-10-10.
-//  Copyright © 2019 Michael Chaffee. All rights reserved.
-//
-
 import UIKit
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
