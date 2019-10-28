@@ -15,7 +15,7 @@ class MockDependencies: DependenciesType {
 
     var mockCounterViewModel = MockCounterViewModel()
     var getCounterViewModelCalls = [CounterViewType?]()
-    func getCounterViewModel(for view: CounterViewType?) -> CounterViewModelType {
+    func buildCounterViewModel(for view: CounterViewType?) -> CounterViewModelType {
         getCounterViewModelCalls.append(view)
         return mockCounterViewModel
     }

@@ -14,7 +14,7 @@ class CounterTests: XCTestCase {
         dependencies = Dependencies()
         mockCounterView = MockCounterView()
         
-        counterViewModel = dependencies.getCounterViewModel(for: mockCounterView)
+        counterViewModel = dependencies.buildCounterViewModel(for: mockCounterView)
     }
     
     func testShouldIncrementCountOnTap() {

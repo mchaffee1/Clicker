@@ -8,7 +8,7 @@ class CounterPageViewController: UIViewController, CounterViewType {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let viewModel = dependencies.getCounterViewModel(for: self)
+        let viewModel = dependencies.buildCounterViewModel(for: self)
         showData(from: viewModel)
         self.viewModel = viewModel
     }

@@ -4,7 +4,7 @@ import UIKit
 protocol DependenciesType {
     var application: UIApplication { get }
     var counterLogicController: CounterLogicControllerType { get }
-    func getCounterViewModel(for: CounterViewType?) -> CounterViewModelType
+    func buildCounterViewModel(for: CounterViewType?) -> CounterViewModelType
 }
 
 class Dependencies: DependenciesType {
@@ -16,7 +16,7 @@ class Dependencies: DependenciesType {
     
     let counterLogicController: CounterLogicControllerType = CounterLogicController()
     
-    func getCounterViewModel(for view: CounterViewType?) -> CounterViewModelType {
+    func buildCounterViewModel(for view: CounterViewType?) -> CounterViewModelType {
         return CounterViewModel(view: view)
     }
 }
