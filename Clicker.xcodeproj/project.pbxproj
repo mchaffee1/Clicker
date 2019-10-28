@@ -60,7 +60,7 @@
 		364ACCF6234FA66B00260E25 /* ClickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		364ACCFC234FA66B00260E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36732EA923592DCE0050A066 /* ClickerFunctionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerFunctionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36732EAD23592DCE0050A066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36732EAD23592DCE0050A066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../ClickerFunctionalTests/Info.plist; sourceTree = "<group>"; };
 		36732EB7235930290050A066 /* InMemoryCounterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCounterRepository.swift; sourceTree = "<group>"; };
 		36732EB9235930D50050A066 /* CounterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterRepositoryTests.swift; sourceTree = "<group>"; };
 		36732EBB235931F20050A066 /* MockCounterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCounterRepository.swift; sourceTree = "<group>"; };
@@ -113,7 +113,6 @@
 				364ACCE4234FA66900260E25 /* Clicker */,
 				364ACCF9234FA66B00260E25 /* ClickerTests */,
 				36C4B816234FEB56003BC64C /* HeadlessFunctionalTests */,
-				36732EAA23592DCE0050A066 /* ClickerFunctionalTests */,
 				364ACCE3234FA66900260E25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,7 +130,6 @@
 		364ACCE4234FA66900260E25 /* Clicker */ = {
 			isa = PBXGroup;
 			children = (
-				36FD0661234FB0FA00CF676C /* Extensions */,
 				36FD0658234FAA1500CF676C /* Model */,
 				36FD0652234FA93900CF676C /* View */,
 				364ACCE5234FA66900260E25 /* AppDelegate.swift */,
@@ -156,17 +154,10 @@
 			path = ClickerTests;
 			sourceTree = "<group>";
 		};
-		36732EAA23592DCE0050A066 /* ClickerFunctionalTests */ = {
-			isa = PBXGroup;
-			children = (
-				36732EAD23592DCE0050A066 /* Info.plist */,
-			);
-			path = ClickerFunctionalTests;
-			sourceTree = "<group>";
-		};
 		36C4B816234FEB56003BC64C /* HeadlessFunctionalTests */ = {
 			isa = PBXGroup;
 			children = (
+				36732EAD23592DCE0050A066 /* Info.plist */,
 				36D4A7FE2358FF9B00E0BC48 /* CounterTests.swift */,
 			);
 			path = HeadlessFunctionalTests;
@@ -220,13 +211,6 @@
 				36732EC62360D64A0050A066 /* MockUILabel.swift */,
 			);
 			path = Mocks;
-			sourceTree = "<group>";
-		};
-		36FD0661234FB0FA00CF676C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

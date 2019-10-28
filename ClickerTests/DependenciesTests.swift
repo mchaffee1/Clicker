@@ -14,8 +14,8 @@ class DependenciesTests: XCTestCase {
     
     func testShouldWireUpCounterViewModel() {
         let mockView = MockCounterView()
-        
         let viewModel = dependencies.buildCounterViewModel(for: mockView)
+
         viewModel.tap()
         
         XCTAssertEqual(1, mockView.showDataCallCount)

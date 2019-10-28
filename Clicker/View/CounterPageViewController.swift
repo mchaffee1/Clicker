@@ -13,6 +13,9 @@ class CounterPageViewController: UIViewController, CounterViewType {
         self.viewModel = viewModel
     }
 
+    // Note that we've defined this label as a protocol of our own creation.  This isn't always necessary
+    // but I did want to demo this pattern.  Check out CounterPageViewControllerTests to see how this lets us
+    // test interactions between a ViewController and its UI elements quickly and cleanly.
     @IBOutlet weak var countLabel: UILabelType?
 
     @IBAction func tap(_ sender: UITapGestureRecognizer) {

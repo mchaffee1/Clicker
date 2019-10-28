@@ -12,17 +12,17 @@ class CounterLogicControllerTests: XCTestCase {
         super.setUp()
         randomInt = Int.random(in: Int.min...Int.max)
         mockCounterRepository = MockCounterRepository()
-        mockCounterRepository.mockGetValue = randomInt
+        mockCounterRepository.mockGetValue = randomInt // stick a random number into the repository count value
         
         counterLogicController = CounterLogicController(counterRepository: mockCounterRepository)
     }
 
     func testShouldInitializeToRepositoryValue() {
-        XCTAssertEqual(randomInt, counterLogicController.get())
+        XCTAssertEqual(randomInt, counterLogicController.get(), "Logic controller should return the count value from repository.get()")
     }
     
     func testShouldSetIncrementedRepositoryValue() {
         counterLogicController.increment()
-        XCTAssertEqual(1 + randomInt, mockCounterRepository.setCalls.last)
+        XCTAssertEqual(1 + randomInt, mockCounterRepository.setCalls.last, "Logic controller should increment the repository count value")
     }
 }

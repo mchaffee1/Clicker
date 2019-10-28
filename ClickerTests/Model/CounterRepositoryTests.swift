@@ -15,6 +15,6 @@ class CounterRepositoryTests: XCTestCase {
         
         counterRepository.set(newValue: randomInt)
         
-        XCTAssertEqual(randomInt, counterRepository.get())
+        XCTAssertEqual(randomInt, counterRepository.get(), "repository should store the count value passed to set()")
     }
 }
