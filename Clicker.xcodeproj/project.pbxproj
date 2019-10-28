@@ -59,8 +59,8 @@
 		364ACCF1234FA66A00260E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		364ACCF6234FA66B00260E25 /* ClickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		364ACCFC234FA66B00260E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36732EA923592DCE0050A066 /* ClickerFunctionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerFunctionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36732EAD23592DCE0050A066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../ClickerFunctionalTests/Info.plist; sourceTree = "<group>"; };
+		36732EA923592DCE0050A066 /* HeadlessFunctionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadlessFunctionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36732EAD23592DCE0050A066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36732EB7235930290050A066 /* InMemoryCounterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCounterRepository.swift; sourceTree = "<group>"; };
 		36732EB9235930D50050A066 /* CounterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterRepositoryTests.swift; sourceTree = "<group>"; };
 		36732EBB235931F20050A066 /* MockCounterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCounterRepository.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			children = (
 				364ACCE2234FA66900260E25 /* Clicker.app */,
 				364ACCF6234FA66B00260E25 /* ClickerTests.xctest */,
-				36732EA923592DCE0050A066 /* ClickerFunctionalTests.xctest */,
+				36732EA923592DCE0050A066 /* HeadlessFunctionalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,9 +251,9 @@
 			productReference = 364ACCF6234FA66B00260E25 /* ClickerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		36732EA823592DCE0050A066 /* ClickerFunctionalTests */ = {
+		36732EA823592DCE0050A066 /* HeadlessFunctionalTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36732EB223592DCE0050A066 /* Build configuration list for PBXNativeTarget "ClickerFunctionalTests" */;
+			buildConfigurationList = 36732EB223592DCE0050A066 /* Build configuration list for PBXNativeTarget "HeadlessFunctionalTests" */;
 			buildPhases = (
 				36732EA523592DCE0050A066 /* Sources */,
 				36732EA623592DCE0050A066 /* Frameworks */,
@@ -264,9 +264,9 @@
 			dependencies = (
 				36732EAF23592DCE0050A066 /* PBXTargetDependency */,
 			);
-			name = ClickerFunctionalTests;
+			name = HeadlessFunctionalTests;
 			productName = ClickerFunctionalTests;
-			productReference = 36732EA923592DCE0050A066 /* ClickerFunctionalTests.xctest */;
+			productReference = 36732EA923592DCE0050A066 /* HeadlessFunctionalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -307,7 +307,7 @@
 			targets = (
 				364ACCE1234FA66900260E25 /* Clicker */,
 				364ACCF5234FA66B00260E25 /* ClickerTests */,
-				36732EA823592DCE0050A066 /* ClickerFunctionalTests */,
+				36732EA823592DCE0050A066 /* HeadlessFunctionalTests */,
 			);
 		};
 /* End PBXProject section */
@@ -605,13 +605,13 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ClickerFunctionalTests/Info.plist;
+				INFOPLIST_FILE = HeadlessFunctionalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.chaf.ClickerFunctionalTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.chaf.ClickerHeadlessFunctionalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -624,13 +624,13 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ClickerFunctionalTests/Info.plist;
+				INFOPLIST_FILE = HeadlessFunctionalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.chaf.ClickerFunctionalTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.chaf.ClickerHeadlessFunctionalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -668,7 +668,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36732EB223592DCE0050A066 /* Build configuration list for PBXNativeTarget "ClickerFunctionalTests" */ = {
+		36732EB223592DCE0050A066 /* Build configuration list for PBXNativeTarget "HeadlessFunctionalTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36732EB023592DCE0050A066 /* Debug */,
