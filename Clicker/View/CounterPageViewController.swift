@@ -25,6 +25,14 @@ class CounterPageViewController: UIViewController, CounterViewType {
         viewModel?.tap()
     }
 
+    @IBAction func swipeDown(_ sender: UISwipeGestureRecognizer) {
+
+    }
+    
+    private func swipeDown() {
+
+    }
+    
     func showData(from viewModel: CounterViewModelType) {
         countLabel?.text = viewModel.countText
     }

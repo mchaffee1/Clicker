@@ -36,4 +36,12 @@ class CounterPageViewControllerTests: XCTestCase {
 
         XCTAssertEqual(1, mockCounterViewModel.tapCallCount)
     }
+    
+    func testShouldCallViewModelOnSwipeDown() {
+        counterPageViewController.viewDidLoad()
+
+        counterPageViewController.swipeDown(UISwipeGestureRecognizer())
+
+        XCTAssertEqual(1, mockCounterViewModel.swipeDownCallCount)
+    }
 }
