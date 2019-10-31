@@ -3,6 +3,7 @@ import Foundation
 protocol CounterViewModelType {
     var countText: String { get }
     func tap()
+    func swipeDown()
 }
 
 protocol CounterViewType: class {
@@ -10,6 +11,10 @@ protocol CounterViewType: class {
 }
 
 struct CounterViewModel: CounterViewModelType {
+    func swipeDown() {
+        // TODO wire to LogicController
+    }
+    
     let counterLogicController: CounterLogicControllerType
     weak var view: CounterViewType?
 

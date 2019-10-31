@@ -16,4 +16,9 @@ class MockCounterViewModel: CounterViewModelType {
     func tap() {
         tapCallCount += 1
     }
+    
+    var swipeDownCallCount = 0
+    func swipeDown() {
+        swipeDownCallCount += 1
+    }
 }
