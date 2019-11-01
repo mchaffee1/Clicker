@@ -25,4 +25,9 @@ class CounterLogicControllerTests: XCTestCase {
         counterLogicController.increment()
         XCTAssertEqual(1 + randomInt, mockCounterRepository.setCalls.last, "Logic controller should increment the repository count value")
     }
+    
+    func testShouldSetDecreasedRepositoryValue() {
+        counterLogicController.decrease()
+        XCTAssertEqual(randomInt - 1, mockCounterRepository.setCalls.last, "Logic controller should increment the repository count value")
+    }
 }

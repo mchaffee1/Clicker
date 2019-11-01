@@ -10,6 +10,10 @@ class MockCounterLogicController: CounterLogicControllerType {
         return mockGetValue
     }
 
+    var decreaseCallCount = 0
+    func decrease() {
+        decreaseCallCount += 1
+    }
     var incrementCallCount = 0
     func increment() {
         incrementCallCount += 1

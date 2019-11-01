@@ -26,11 +26,11 @@ class CounterPageViewController: UIViewController, CounterViewType {
     }
 
     @IBAction func swipeDown(_ sender: UISwipeGestureRecognizer) {
-
+        swipeDown()
     }
     
     private func swipeDown() {
-
+        viewModel?.swipeDown()
     }
     
     func showData(from viewModel: CounterViewModelType) {

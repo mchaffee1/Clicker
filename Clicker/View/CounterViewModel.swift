@@ -11,10 +11,6 @@ protocol CounterViewType: class {
 }
 
 struct CounterViewModel: CounterViewModelType {
-    func swipeDown() {
-        // TODO wire to LogicController
-    }
-    
     let counterLogicController: CounterLogicControllerType
     weak var view: CounterViewType?
 
@@ -24,9 +20,18 @@ struct CounterViewModel: CounterViewModelType {
 
     func tap() {
         counterLogicController.increment()
-        view?.showData(from: self)
+        notifyView()
     }
 
+    func swipeDown() {
+        counterLogicController.decrease()
+        notifyView()
+    }
+    
+    private func notifyView() {
+        view?.showData(from: self)
+    }
+    
     init(view: CounterViewType?,
          logicController: CounterLogicControllerType = CounterLogicController.shared) {
         self.view = view

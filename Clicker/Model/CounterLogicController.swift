@@ -3,6 +3,7 @@ import Foundation
 protocol CounterLogicControllerType {
     func get() -> Int
     func increment()
+    func decrease()
 }
 
 protocol CounterRepositoryType {
@@ -12,19 +13,28 @@ protocol CounterRepositoryType {
 
 class CounterLogicController: CounterLogicControllerType {
     public static let shared = CounterLogicController()
-
+    
     private let counterRepository: CounterRepositoryType
-
+    
     init(counterRepository: CounterRepositoryType = InMemoryCounterRepository()) {
         self.counterRepository = counterRepository
     }
-
+    
     func get() -> Int {
         return counterRepository.get()
     }
-
+    
     func increment() {
-        let currentValue = counterRepository.get()
-        counterRepository.set(newValue: 1 + currentValue)
+        storeValueChange { $0 + 1 }
+    }
+
+    func decrease() {
+        storeValueChange { $0 - 1 }
+    }
+    
+    private func storeValueChange(transform: (Int)->(Int)) {
+        let oldValue = counterRepository.get()
+        let newValue = transform(oldValue)
+        counterRepository.set(newValue: newValue)
     }
 }

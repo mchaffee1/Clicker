@@ -32,4 +32,13 @@ class CounterViewModelTests: XCTestCase {
         XCTAssertEqual(1, mockCounterLogicController.incrementCallCount, "On tap, ViewModel should call logic controller increment()")
         XCTAssertEqual(1, mockCounterView.showDataCallCount, "On tap, ViewModel should call view's showData(from:)")
     }
+    
+    func testShouldCallDecreaseOnSwipeDown(){
+        mockCounterLogicController.mockGetValue = randomInt
+        
+        counterViewModel.swipeDown()
+
+        XCTAssertEqual(1, mockCounterLogicController.decreaseCallCount, "On swipe down, ViewModel should call logic controller decrease()")
+        XCTAssertEqual(1, mockCounterView.showDataCallCount, "On tap, ViewModel should call view's showData(from:)")
+    }
 }
