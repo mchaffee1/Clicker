@@ -5,7 +5,9 @@ import XCTest
 @testable import Clicker
 
 class CounterPageViewControllerTests: XCTestCase {
-    var mockCounterViewModel: MockCounterViewModel!
+    var mockCounterViewModel: MockCounterViewModel {
+        return mockDependencies.mockCounterViewModel
+    }
     var counterPageViewController: CounterPageViewController!
     var mockDependencies: MockDependencies!
     var mockLabel: MockUILabel!
@@ -15,7 +17,7 @@ class CounterPageViewControllerTests: XCTestCase {
         mockLabel = MockUILabel()
         counterPageViewController = CounterPageViewController()
         mockDependencies = MockDependencies()
-        mockCounterViewModel = mockDependencies.mockCounterViewModel
+
         counterPageViewController.dependencies = mockDependencies
         counterPageViewController.countLabel = mockLabel
     }
