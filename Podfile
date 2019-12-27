@@ -13,4 +13,10 @@ target 'Clicker' do
     # Pods for testing
   end
 
+  target 'ClickerIntegrationTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'WiremockClient'
+  end
+
 end
