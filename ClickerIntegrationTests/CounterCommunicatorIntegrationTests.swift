@@ -22,7 +22,7 @@ class CounterCommunicatorIntegrationTests: XCTestCase {
         stubCountResponse(withCount: randomInt)
         let expectation = XCTestExpectation(description: "waiting for return from get")
 
-        counterCommunicator.get { result in
+        counterCommunicator.loadCount { result in
             switch result {
             case .success(let value):
                 XCTAssertEqual(value, randomInt)
