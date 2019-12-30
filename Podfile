@@ -6,7 +6,6 @@ target 'Clicker' do
   use_frameworks!
 
   # Pods for Clicker
-  pod 'Alamofire'
 
   target 'ClickerTests' do
     inherit! :search_paths

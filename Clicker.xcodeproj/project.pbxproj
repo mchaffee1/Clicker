@@ -313,7 +313,6 @@
 				364ACCDE234FA66900260E25 /* Sources */,
 				364ACCDF234FA66900260E25 /* Frameworks */,
 				364ACCE0234FA66900260E25 /* Resources */,
-				C8ADE69D6E6F2890E8C63F30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -544,23 +543,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClickerIntegrationTests/Pods-ClickerIntegrationTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C8ADE69D6E6F2890E8C63F30 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Clicker/Pods-Clicker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Clicker/Pods-Clicker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Clicker/Pods-Clicker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

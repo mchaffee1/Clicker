@@ -1,20 +1,16 @@
 PODS:
-  - Alamofire (4.9.1)
   - WiremockClient (1.2.1)
 
 DEPENDENCIES:
-  - Alamofire
   - WiremockClient
 
 SPEC REPOS:
   trunk:
-    - Alamofire
     - WiremockClient
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   WiremockClient: a065136dab3d3640ede7d75a7b55d180b72e39eb
 
-PODFILE CHECKSUM: f604e033e9b16b9ad1ba8624253be585cbab6bd9
+PODFILE CHECKSUM: 3bc4f3efde426bc94a89bac56555e3b3cf2ffb8f
 
 COCOAPODS: 1.8.4
