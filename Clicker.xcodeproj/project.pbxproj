@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		00AF2B8A3C0FDF86268B086B /* Pods_ClickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEA7C529C55AE0ACEEF438 /* Pods_ClickerTests.framework */; };
 		2486F783A3D217270D1BA932 /* Pods_ClickerIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A63D27B6FE3D04855B62CA9 /* Pods_ClickerIntegrationTests.framework */; };
+		363DF97323BA8F8D00869BD6 /* MockCounterCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363DF97223BA8F8D00869BD6 /* MockCounterCommunicator.swift */; };
 		364ACCE6234FA66900260E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364ACCE5234FA66900260E25 /* AppDelegate.swift */; };
 		364ACCEB234FA66900260E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCE9234FA66900260E25 /* Main.storyboard */; };
 		364ACCED234FA66A00260E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCEC234FA66A00260E25 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		363DF97223BA8F8D00869BD6 /* MockCounterCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCounterCommunicator.swift; sourceTree = "<group>"; };
 		364ACCE2234FA66900260E25 /* Clicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364ACCE5234FA66900260E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		364ACCEA234FA66900260E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				36732EBB235931F20050A066 /* MockCounterRepository.swift */,
 				36732EC2235F7FDD0050A066 /* MockDependencies.swift */,
 				36732EC62360D64A0050A066 /* MockUILabel.swift */,
+				363DF97223BA8F8D00869BD6 /* MockCounterCommunicator.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36732EC1235CCE870050A066 /* DependenciesTests.swift in Sources */,
+				363DF97323BA8F8D00869BD6 /* MockCounterCommunicator.swift in Sources */,
 				36732EBC235931F20050A066 /* MockCounterRepository.swift in Sources */,
 				36FD065D234FAA7400CF676C /* CounterLogicControllerTests.swift in Sources */,
 				36C4B815234FEADB003BC64C /* MockCounterViewModel.swift in Sources */,

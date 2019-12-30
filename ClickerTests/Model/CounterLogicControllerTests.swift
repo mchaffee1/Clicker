@@ -6,23 +6,39 @@ import XCTest
 class CounterLogicControllerTests: XCTestCase {
     var counterLogicController: CounterLogicController!
     var mockCounterRepository: MockCounterRepository!
-    var randomInt: Int!
+    var mockRepositoryCount: Int!
+    var mockCounterCommunicator: MockCounterCommunicator!
+    var mockAPICount: Int!
 
     override func setUp() {
         super.setUp()
-        randomInt = Int.random(in: Int.min...Int.max)
+        mockRepositoryCount = Int.random(in: Int.min...Int.max)
         mockCounterRepository = MockCounterRepository()
-        mockCounterRepository.mockGetValue = randomInt // stick a random number into the repository count value
-        
-        counterLogicController = CounterLogicController(counterRepository: mockCounterRepository)
+        mockCounterRepository.mockGetValue = mockRepositoryCount // stick a random number into the repository count value
+
+        mockAPICount = Int.random(in: Int.min...Int.max)
+        mockCounterCommunicator = MockCounterCommunicator()
+        mockCounterCommunicator.mockCountValue = mockAPICount
+
+        counterLogicController = CounterLogicController(counterRepository: mockCounterRepository, counterCommunicator: mockCounterCommunicator)
     }
 
     func testShouldInitializeToRepositoryValue() {
-        XCTAssertEqual(randomInt, counterLogicController.get(), "Logic controller should return the count value from repository.get()")
+        let expectedCallCount = 1 + mockCounterRepository.getCallCount
+        XCTAssertEqual(mockRepositoryCount, counterLogicController.get(), "Logic controller should return the count value from counterRepository.get()")
+        XCTAssertEqual(mockCounterRepository.getCallCount, expectedCallCount, "Logic controller should call counterRepository.get() once")
     }
     
     func testShouldSetIncrementedRepositoryValue() {
         counterLogicController.increment()
-        XCTAssertEqual(1 + randomInt, mockCounterRepository.setCalls.last, "Logic controller should increment the repository count value")
+        XCTAssertEqual(1 + mockRepositoryCount, mockCounterRepository.setCalls.last, "Logic controller should increment the repository count value")
+    }
+
+    func testShouldGetAndStoreInitialValueOnLaunch() {
+        // No action at this time - we just launch, let everything sort out, and then hope for the best
+        Thread.sleep(forTimeInterval: 0.01)
+        XCTAssertEqual(mockCounterCommunicator.loadCountCallCount, 1)
+        XCTAssertEqual(mockCounterRepository.setCalls.last, mockAPICount)
+        XCTAssertEqual(mockCounterRepository.setCalls.count, 1)
     }
 }
