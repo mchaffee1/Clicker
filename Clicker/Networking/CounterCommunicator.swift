@@ -15,7 +15,7 @@ class CounterCommunicator: CounterCommunicatorType {
     }
 
     func save(count: Int) {
-        // TODO make work
+        post(path: counterPath, value: Count(count: count)) { _ in }
     }
 }
 
@@ -25,19 +25,71 @@ protocol CommunicatorType {
 extension CommunicatorType {
     typealias ResultHandler<T> = (Result<T, Error>) -> ()
 
+    // TODO add error handling
+    func post<ValueType: Encodable>(path: String, value: ValueType, completionHandler: @escaping ((Result<Any, Error>) -> ()) = { _ in }) {
+        guard let url = URL(string: path),
+            let jsonData = value.toJsonData() else {
+                completionHandler(Result.failure("Unable to encode url and/or post body"))
+            return
+        }
+        let request: URLRequest = {
+            var result = URLRequest(url: url)
+            result.httpMethod = "POST"
+            return result
+        }()
+        URLSession.shared.uploadTask(with: request, from: jsonData) { data, response, error in
+            if let error = error {
+                completionHandler(Result.failure(error))
+            } else {
+                completionHandler(Result.success("POST succeeded"))
+            }
+        }.resume()
+    }
+
     func get<ResultType: Decodable>(path: String, completionHandler: @escaping ResultHandler<ResultType>) {
         guard let url = URL(string: path) else {
-            fatalError("could not instantiate url")
+            completionHandler(Result.failure("Could not instantiate url from \(path)"))
+            return
         }
 
         URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data,
-                let resultValue = try? JSONDecoder().decode(ResultType.self, from: data) else {
-                // TODO error handling 😂
-                    completionHandler(Result.failure(error ?? NSError(domain: "Couldn't even get an error", code: -1, userInfo: nil)))
-                return
+            if let error = error {
+                completionHandler(Result.failure(error))
+            } else {
+                completionHandler(ResultType.from(json: data))
             }
-            completionHandler(Result.success(resultValue))
         }.resume()
     }
+}
+
+extension Decodable {
+    static func from(json: Data?) -> Result<Self, Error> {
+        return JSONDecoder().decode(Self.self, from: json)
+    }
+}
+
+extension JSONDecoder {
+    func decode<T>(_ type: T.Type, from data: Data?) -> Result<T, Error> where T : Decodable {
+        return Result() {
+            guard let data = data else {
+                let context = DecodingError.Context(codingPath: [], debugDescription: "Could not decode nil json data")
+                throw DecodingError.valueNotFound(String.self, context)
+            }
+            return try decode(type, from: data)
+        }
+    }
+}
+
+extension Encodable {
+    func toJsonData() -> Data? {
+        do {
+            return try JSONEncoder().encode(self)
+        } catch {
+            print(error)
+            return nil
+        }
+    }
+}
+
+extension String: Error {
 }
