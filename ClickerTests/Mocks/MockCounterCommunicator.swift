@@ -9,4 +9,9 @@ class MockCounterCommunicator: CounterCommunicatorType {
         loadCountCallCount += 1
         completionHandler(.success(mockCountValue))
     }
+
+    var saveCalls = [Int]()
+    func save(count: Int) {
+        saveCalls.append(count)
+    }
 }

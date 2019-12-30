@@ -29,9 +29,11 @@ class CounterLogicControllerTests: XCTestCase {
         XCTAssertEqual(mockCounterRepository.getCallCount, expectedCallCount, "Logic controller should call counterRepository.get() once")
     }
     
-    func testShouldSetIncrementedRepositoryValue() {
+    func testShouldSetIncrementedRepositoryValueAndStoreInAPI() {
+        let newCount = 1 + mockCounterRepository.get()
         counterLogicController.increment()
-        XCTAssertEqual(1 + mockRepositoryCount, mockCounterRepository.setCalls.last, "Logic controller should increment the repository count value")
+        XCTAssertEqual(mockCounterRepository.setCalls.last, newCount, "Logic controller should increment the repository count value")
+        XCTAssertEqual(mockCounterCommunicator.saveCalls, [newCount])
     }
 
     func testShouldGetAndStoreInitialValueOnLaunch() {

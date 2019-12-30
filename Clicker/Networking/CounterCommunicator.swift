@@ -3,9 +3,14 @@ import Alamofire
 
 protocol CounterCommunicatorType: CommunicatorType {
     func loadCount(completionHandler: @escaping ResultHandler<Int>)
+    func save(count: Int)
 }
 
 class CounterCommunicator: CounterCommunicatorType {
+    func save(count: Int) {
+        // TODO make work
+    }
+
     let counterPath = "http://localhost:8080/counter"
 
     func loadCount(completionHandler: @escaping ResultHandler<Int>) {

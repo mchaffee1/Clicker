@@ -40,8 +40,8 @@ class CounterLogicController: CounterLogicControllerType {
     }
 
     func increment() {
-        let currentValue = counterRepository.get()
-        counterRepository.set(newValue: 1 + currentValue)
-        // TODO POST updates to API (here?)
+        let newValue = 1 + counterRepository.get()
+        counterRepository.set(newValue: newValue)
+        counterCommunicator.save(count: newValue)
     }
 }
