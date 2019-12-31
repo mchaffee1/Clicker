@@ -1,17 +1,26 @@
 # Clicker
 
-This is a super small "clicker" application that increments a counter each time the user taps the screen.
+This is a super small "clicker" application that just increments a counter each time the user taps the screen.
 It's intended to be the simplest possible demonstration of a couple of good practices in iOS, namely:
 - MVVM architecture
 - Protocol-oriented everything
 - Lightweight dependency injection
 - Simple handwritten mocks
 - High unit test coverage (achieved through strict TDD)
-- Headless functional tests (well, test)
+- Small, bounded integration tests
+- Headless functional tests
 
-There are no external libraries or anything; a developer should be able to open the project in Xcode 10+, 
-build, and test or run the app.  Please note that there are two schemes: 
+This project uses Cocoapods, but only in order to bring in the handy [WiremockClient library](https://cocoapods.org/pods/WiremockClient) for testing.
+This means that after cloning, you'll need to `pod install.`
+
+Additionally, at present the app is hardcoded to see a Wiremock API at localhost:8080.  Obviously in real
+life, we'd manage that service address in config, rather than hardcoding.  But this does mean developers
+should [install and run Wiremock](http://wiremock.org/docs/getting-started/) on port 8080 for testing.
+
+Please note that there are three schemes: 
 - Clicker (containing the application and unit tests)
-- Functional Tests (containing the headless functional test)
+- Headless Functional Tests
+- Integration Tests
 
-If you see something in this codebase that could be better, PRs are welcome and thanks in advance!
+If you see something in this project that could be better, PRs are welcome and thanks in advance!
+
