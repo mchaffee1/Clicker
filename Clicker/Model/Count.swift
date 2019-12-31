@@ -1,5 +1,5 @@
 import Foundation
 
-struct Count: Encodable, Decodable {
+struct Count: Codable {
     let count: Int
 }

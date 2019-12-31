@@ -10,6 +10,11 @@
 		00AF2B8A3C0FDF86268B086B /* Pods_ClickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEA7C529C55AE0ACEEF438 /* Pods_ClickerTests.framework */; };
 		2486F783A3D217270D1BA932 /* Pods_ClickerIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A63D27B6FE3D04855B62CA9 /* Pods_ClickerIntegrationTests.framework */; };
 		363DF97323BA8F8D00869BD6 /* MockCounterCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363DF97223BA8F8D00869BD6 /* MockCounterCommunicator.swift */; };
+		363DF97623BB97AB00869BD6 /* Encodable+toJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363DF97523BB97AB00869BD6 /* Encodable+toJsonData.swift */; };
+		363DF97823BB97BE00869BD6 /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363DF97723BB97BE00869BD6 /* String+Error.swift */; };
+		363DF97A23BB97E000869BD6 /* JSONDecoder+decode+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363DF97923BB97E000869BD6 /* JSONDecoder+decode+Result.swift */; };
+		363DF97C23BB982700869BD6 /* Decodable+from.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363DF97B23BB982700869BD6 /* Decodable+from.swift */; };
+		363DF97E23BB990100869BD6 /* CommunicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363DF97D23BB990100869BD6 /* CommunicatorType.swift */; };
 		364ACCE6234FA66900260E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364ACCE5234FA66900260E25 /* AppDelegate.swift */; };
 		364ACCEB234FA66900260E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCE9234FA66900260E25 /* Main.storyboard */; };
 		364ACCED234FA66A00260E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCEC234FA66A00260E25 /* Assets.xcassets */; };
@@ -68,6 +73,11 @@
 
 /* Begin PBXFileReference section */
 		363DF97223BA8F8D00869BD6 /* MockCounterCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCounterCommunicator.swift; sourceTree = "<group>"; };
+		363DF97523BB97AB00869BD6 /* Encodable+toJsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+toJsonData.swift"; sourceTree = "<group>"; };
+		363DF97723BB97BE00869BD6 /* String+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Error.swift"; sourceTree = "<group>"; };
+		363DF97923BB97E000869BD6 /* JSONDecoder+decode+Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+decode+Result.swift"; sourceTree = "<group>"; };
+		363DF97B23BB982700869BD6 /* Decodable+from.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+from.swift"; sourceTree = "<group>"; };
+		363DF97D23BB990100869BD6 /* CommunicatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicatorType.swift; sourceTree = "<group>"; };
 		364ACCE2234FA66900260E25 /* Clicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364ACCE5234FA66900260E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		364ACCEA234FA66900260E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -148,6 +158,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		363DF97423BB979400869BD6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				363DF97B23BB982700869BD6 /* Decodable+from.swift */,
+				363DF97523BB97AB00869BD6 /* Encodable+toJsonData.swift */,
+				363DF97923BB97E000869BD6 /* JSONDecoder+decode+Result.swift */,
+				363DF97723BB97BE00869BD6 /* String+Error.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		364ACCD9234FA66900260E25 = {
 			isa = PBXGroup;
 			children = (
@@ -175,14 +196,15 @@
 		364ACCE4234FA66900260E25 /* Clicker */ = {
 			isa = PBXGroup;
 			children = (
-				36FB853523B55195009F4A0E /* Networking */,
+				363DF97423BB979400869BD6 /* Extensions */,
 				36FD0658234FAA1500CF676C /* Model */,
+				36FB853523B55195009F4A0E /* Networking */,
 				36FD0652234FA93900CF676C /* View */,
 				364ACCE5234FA66900260E25 /* AppDelegate.swift */,
-				364ACCE9234FA66900260E25 /* Main.storyboard */,
 				364ACCEC234FA66A00260E25 /* Assets.xcassets */,
-				364ACCF1234FA66A00260E25 /* Info.plist */,
 				36C4B810234FE758003BC64C /* Dependencies.swift */,
+				364ACCF1234FA66A00260E25 /* Info.plist */,
+				364ACCE9234FA66900260E25 /* Main.storyboard */,
 				36C4B81B2350A885003BC64C /* main.swift */,
 			);
 			path = Clicker;
@@ -222,6 +244,7 @@
 		36FB853523B55195009F4A0E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				363DF97D23BB990100869BD6 /* CommunicatorType.swift */,
 				36FB853623B551A2009F4A0E /* CounterCommunicator.swift */,
 			);
 			path = Networking;
@@ -230,8 +253,8 @@
 		36FD0652234FA93900CF676C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				36FD0654234FA95700CF676C /* CounterViewModel.swift */,
 				36C4B80E234FD31A003BC64C /* CounterPageViewController.swift */,
+				36FD0654234FA95700CF676C /* CounterViewModel.swift */,
 				36732EC42360D5F00050A066 /* UILabelType.swift */,
 			);
 			path = View;
@@ -249,9 +272,9 @@
 		36FD0658234FAA1500CF676C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				36FB853A23B66B42009F4A0E /* Count.swift */,
 				36FD0659234FAA2100CF676C /* CounterLogicController.swift */,
 				36732EB7235930290050A066 /* InMemoryCounterRepository.swift */,
-				36FB853A23B66B42009F4A0E /* Count.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -553,11 +576,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FD065A234FAA2100CF676C /* CounterLogicController.swift in Sources */,
+				363DF97823BB97BE00869BD6 /* String+Error.swift in Sources */,
 				36FB853B23B66B42009F4A0E /* Count.swift in Sources */,
 				364ACCE6234FA66900260E25 /* AppDelegate.swift in Sources */,
 				36FB853723B551A2009F4A0E /* CounterCommunicator.swift in Sources */,
 				36732EB8235930290050A066 /* InMemoryCounterRepository.swift in Sources */,
 				36C4B81C2350A885003BC64C /* main.swift in Sources */,
+				363DF97A23BB97E000869BD6 /* JSONDecoder+decode+Result.swift in Sources */,
+				363DF97E23BB990100869BD6 /* CommunicatorType.swift in Sources */,
+				363DF97623BB97AB00869BD6 /* Encodable+toJsonData.swift in Sources */,
+				363DF97C23BB982700869BD6 /* Decodable+from.swift in Sources */,
 				36732EC52360D5F00050A066 /* UILabelType.swift in Sources */,
 				36C4B80F234FD31A003BC64C /* CounterPageViewController.swift in Sources */,
 				36C4B811234FE758003BC64C /* Dependencies.swift in Sources */,

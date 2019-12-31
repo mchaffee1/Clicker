@@ -20,10 +20,10 @@ class CounterLogicController: CounterLogicControllerType {
          counterCommunicator: CounterCommunicatorType = CounterCommunicator()) {
         self.counterRepository = counterRepository
         self.counterCommunicator = counterCommunicator
-        storeApiValueInRepository()
+        initializeRepositoryFromApi()
     }
 
-    fileprivate func storeApiValueInRepository() {
+    fileprivate func initializeRepositoryFromApi() {
         counterCommunicator.loadCount { result in
             switch result {
             case .success(let value):
