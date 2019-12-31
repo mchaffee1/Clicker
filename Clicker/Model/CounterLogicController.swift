@@ -42,6 +42,6 @@ class CounterLogicController: CounterLogicControllerType {
     func increment() {
         let newValue = 1 + counterRepository.get()
         counterRepository.set(newValue: newValue)
-        counterCommunicator.save(count: newValue)
+        counterCommunicator.save(count: newValue) { _ in }
     }
 }

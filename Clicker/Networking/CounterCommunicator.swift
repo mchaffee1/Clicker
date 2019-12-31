@@ -2,7 +2,7 @@ import Foundation
 
 protocol CounterCommunicatorType: CommunicatorType {
     func loadCount(completionHandler: @escaping ResultHandler<Int>)
-    func save(count: Int)
+    func save(count: Int, completionHandler: @escaping (Result<Any, Error>)->())
 }
 
 class CounterCommunicator: CounterCommunicatorType {
@@ -14,7 +14,7 @@ class CounterCommunicator: CounterCommunicatorType {
         }
     }
 
-    func save(count: Int) {
-        post(path: counterPath, value: Count(count: count)) { _ in }
+    func save(count: Int, completionHandler: @escaping (Result<Any, Error>)->()) {
+        post(path: counterPath, value: Count(count: count)) { result in completionHandler(result) }
     }
 }

@@ -10,8 +10,10 @@ class MockCounterCommunicator: CounterCommunicatorType {
         completionHandler(.success(mockCountValue))
     }
 
+    var mockSuccessResult: Any = "Success"
     var saveCalls = [Int]()
-    func save(count: Int) {
+    func save(count: Int, completionHandler: @escaping (Result<Any, Error>) -> ()) {
         saveCalls.append(count)
+        completionHandler(Result.success(mockSuccessResult))
     }
 }

@@ -15,6 +15,7 @@
 		363DF97A23BB97E000869BD6 /* JSONDecoder+decode+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363DF97923BB97E000869BD6 /* JSONDecoder+decode+Result.swift */; };
 		363DF97C23BB982700869BD6 /* Decodable+from.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363DF97B23BB982700869BD6 /* Decodable+from.swift */; };
 		363DF97E23BB990100869BD6 /* CommunicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363DF97D23BB990100869BD6 /* CommunicatorType.swift */; };
+		363DF98123BBCF2200869BD6 /* WiremockVerify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363DF97F23BBCEB900869BD6 /* WiremockVerify.swift */; };
 		364ACCE6234FA66900260E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364ACCE5234FA66900260E25 /* AppDelegate.swift */; };
 		364ACCEB234FA66900260E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCE9234FA66900260E25 /* Main.storyboard */; };
 		364ACCED234FA66A00260E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCEC234FA66A00260E25 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		363DF97923BB97E000869BD6 /* JSONDecoder+decode+Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+decode+Result.swift"; sourceTree = "<group>"; };
 		363DF97B23BB982700869BD6 /* Decodable+from.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+from.swift"; sourceTree = "<group>"; };
 		363DF97D23BB990100869BD6 /* CommunicatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicatorType.swift; sourceTree = "<group>"; };
+		363DF97F23BBCEB900869BD6 /* WiremockVerify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiremockVerify.swift; sourceTree = "<group>"; };
 		364ACCE2234FA66900260E25 /* Clicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364ACCE5234FA66900260E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		364ACCEA234FA66900260E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 		36FB852C23B5251A009F4A0E /* ClickerIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				363DF97F23BBCEB900869BD6 /* WiremockVerify.swift */,
 				36FB852D23B5251A009F4A0E /* CounterCommunicatorIntegrationTests.swift */,
 				36FB852F23B5251A009F4A0E /* Info.plist */,
 				36FB853823B55399009F4A0E /* WiremockClient+Verify.swift */,
@@ -629,6 +632,7 @@
 			files = (
 				36FB853923B55399009F4A0E /* WiremockClient+Verify.swift in Sources */,
 				36FB852E23B5251A009F4A0E /* CounterCommunicatorIntegrationTests.swift in Sources */,
+				363DF98123BBCF2200869BD6 /* WiremockVerify.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
