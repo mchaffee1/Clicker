@@ -19,7 +19,7 @@ class CounterCommunicatorIntegrationTests: XCTestCase {
 
     func testShouldFetchCounterFromEndpoint() {
         let randomInt = Int.random(in: Int.min...Int.max)
-        stubCountGetResponse(withCount: randomInt)
+        WiremockClient.stubCountGetResponse(withCount: randomInt)
         let expectation = XCTestExpectation(description: "waiting for return from get")
 
         counterCommunicator.loadCount { result in
@@ -37,7 +37,7 @@ class CounterCommunicatorIntegrationTests: XCTestCase {
 
     func testShouldPostCounterToEndpoint() {
         let randomInt = Int.random(in: Int.min...Int.max)
-        stubCountPostResponse()
+        WiremockClient.stubCountPostResponse()
 
         let expectation = XCTestExpectation(description: "waiting for return from post")
         counterCommunicator.save(count: randomInt) { _ in
@@ -55,23 +55,5 @@ class CounterCommunicatorIntegrationTests: XCTestCase {
 
         XCTAssertEqual(postRequests.count, 1)
         XCTAssertEqual(postedCount?.count, randomInt)
-    }
-
-    func stubCountGetResponse(withCount count: Int) {
-        let stubMapping = StubMapping.stubFor(
-            requestMethod: .GET,
-            urlMatchCondition: .urlEqualTo,
-            url: "/counter")
-            .willReturn(ResponseDefinition()
-                .withStatus(200)
-                .withBody(["count": count])
-        )
-        WiremockClient.postMapping(stubMapping: stubMapping)
-    }
-
-    func stubCountPostResponse() {
-        let stubMapping = StubMapping.stubFor(requestMethod: .POST, urlMatchCondition: .urlEqualTo, url: "/counter")
-            .willReturn(ResponseDefinition().withStatus(200))
-        WiremockClient.postMapping(stubMapping: stubMapping)
     }
 }

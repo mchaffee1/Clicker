@@ -1,5 +1,6 @@
 import Foundation
 import XCTest
+import WiremockClient
 
 @testable import Clicker
 
@@ -17,25 +18,57 @@ class CounterTests: XCTestCase {
     var mockCounterView: MockCounterView!
     
     var counterViewModel: CounterViewModelType!
+
+    var randomApiCount: Int!
     
     override func setUp() {
+        guard WiremockClient.isServerRunning() else {
+            fatalError("Wiremock server is not running")
+        }
+        randomApiCount = Int.random(in: Int.min...Int.max)
+        WiremockClient.stubCountGetResponse(withCount: randomApiCount)
+        WiremockClient.stubCountPostResponse()
+
         dependencies = Dependencies()
         mockCounterView = MockCounterView()
         
         counterViewModel = dependencies.buildCounterViewModel(for: mockCounterView)
     }
+
+    override func tearDown() {
+        WiremockClient.reset()
+    }
     
     func testShouldIncrementCountOnTap() {
-        XCTAssertEqual("0", counterViewModel.countText, "The app should launch showing a count of zero")
+        Thread.sleep(forTimeInterval: 0.1)  // TODO wait more elegantly
+        XCTAssertEqual(counterViewModel.countText, String(randomApiCount), "The app should launch showing the API count")
 
         counterViewModel.tap()
-        
-        XCTAssertEqual(1, mockCounterView.showDataCallCount, "After one tap, the view should have been evented once")
-        XCTAssertEqual("1", counterViewModel.countText, "After one tap, the app should show a count of one")
+        Thread.sleep(forTimeInterval: 0.1)  // TODO wait more elegantly
+
+        XCTAssertEqual(mockCounterView.showDataCallCount, 1, "After one tap, the view should have been evented once")
+        XCTAssertEqual(counterViewModel.countText, String(1 + randomApiCount), "After one tap, the app should show a count incremented once")
+        XCTAssertEqual(mostRecentPostedCount(), 1 + randomApiCount, "After one tap, the app should post a count incremented once")
 
         counterViewModel.tap()
-        
-        XCTAssertEqual(2, mockCounterView.showDataCallCount, "After a second tap, the view should have been evented twice")
-        XCTAssertEqual("2", counterViewModel.countText, "After a second tap, the view should show a count of two")
+        Thread.sleep(forTimeInterval: 0.1)  // TODO wait more elegantly
+
+        XCTAssertEqual(mockCounterView.showDataCallCount, 2, "After a second tap, the view should have been evented twice")
+        XCTAssertEqual(counterViewModel.countText, String(2 + randomApiCount), "After a second tap, the view should show a count of two")
+        XCTAssertEqual(mostRecentPostedCount(), 2 + randomApiCount, "After a second tap, the app should post a count incremented twice")
+    }
+
+    func replayPosts() -> [RecordedRequest] {
+        return WiremockVerify().replayRequests()?.requests
+            .filter { $0.request.method == "POST" }
+            .map { $0.request } ?? []
+    }
+
+    func mostRecentPostedCount() -> Int? {
+        return try? Count.from(string: replayPosts().first?.body).get().count
+    }
+
+    func postCount() -> Int {
+        return 0
     }
 }

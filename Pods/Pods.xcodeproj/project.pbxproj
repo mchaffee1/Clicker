@@ -7,24 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0716B04E1EBDF57D702F3A10B8FE46E0 /* Pods-HeadlessFunctionalTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48DA7FE8FFECF725DAA73315D76E2EC7 /* Pods-HeadlessFunctionalTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		188A6CBCD8260575079B422C131D9286 /* WiremockClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 005111897F78AB0E41FB1F43E989CFDA /* WiremockClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B1B599F57D685B8F3917D6CB03FD53E /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B20F7CCCD4752EA95F8DDB3242C053 /* RequestMethod.swift */; };
 		2BCCFE4942193B49039A7C85EC38A8B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		3031236180CDC372C2C3D010E8770A20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		32E8B9D15691D21E4CA99CC42310EF7C /* WiremockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378436FCFFD730DBA06EF3BA8866258 /* WiremockClient.swift */; };
-		4908D978C4905B1805A8BF2DD5E98AB9 /* Pods-ClickerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7665DAA4DC11ED0A85BFD5778233543 /* Pods-ClickerTests-dummy.m */; };
-		593EDC1729512A9DFE0E9B29B01CA062 /* Pods-ClickerIntegrationTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D28A513CB6A4C804B8D8BF4084410D58 /* Pods-ClickerIntegrationTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4908D978C4905B1805A8BF2DD5E98AB9 /* Pods-ClickerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB369A4BFDCB36308292415F1272864F /* Pods-ClickerTests-dummy.m */; };
+		593EDC1729512A9DFE0E9B29B01CA062 /* Pods-ClickerIntegrationTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C082E7A99C64C22F6419C47968AC2051 /* Pods-ClickerIntegrationTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		600A8D7708165468A121F06B87626C1F /* StubMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA8F03DCC711E6B09751C869B9DB19 /* StubMapping.swift */; };
+		62C0FC3BB3EC43E0D671FABAA935C61C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		6C6C3A46E6A0E87115EB0FF466FB12EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		7A30FE76CC61A5437B61F0687D3FE081 /* RequestPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11367A07BDE3878D96A4AC620C0E8 /* RequestPattern.swift */; };
 		81A581B8BF9517D9868A0389443B29BD /* WiremockClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC1D137F578449C6A9873E0C5173EA /* WiremockClient-dummy.m */; };
 		95A512D7B240E4501FEC5489E0D01CCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B8AA36A9536DDFE739CF0AAE035745A1 /* Pods-HeadlessFunctionalTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C34CFB30923755BA502863F497C4E87C /* Pods-HeadlessFunctionalTests-dummy.m */; };
 		B8C30DD264CF8BC344027348371D1E32 /* UrlPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89F653B40642A3B8D2B3D7A30AE61FC /* UrlPattern.swift */; };
-		BA2DA2E965F75E0EE9757A192E50B646 /* Pods-ClickerIntegrationTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE88EB057333936CF25798689B74A47B /* Pods-ClickerIntegrationTests-dummy.m */; };
+		BA2DA2E965F75E0EE9757A192E50B646 /* Pods-ClickerIntegrationTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1959EE75E8944AECF43FA253974F2 /* Pods-ClickerIntegrationTests-dummy.m */; };
 		C350289323E943F34788A7E893C57603 /* ResponseDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A681E6F2D7AEB03F6539A4F6B115027 /* ResponseDefinition.swift */; };
-		CE77B0AF5626136EAD69B8282E4E35D4 /* Pods-Clicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BDC66F1E3A756CDC5005492ECC0CE /* Pods-Clicker-dummy.m */; };
-		E1EDDCEC0E7B5811961DC7BEC5BBC9AB /* Pods-Clicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1B452B4FF2B972C0B6852CC46F9F83 /* Pods-Clicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB02B9BD05F6D9FE068902C877A77D3E /* Pods-ClickerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F49940AF0FFE96FABD6751B178B94D6 /* Pods-ClickerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE77B0AF5626136EAD69B8282E4E35D4 /* Pods-Clicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC63D26767F44D961C5EB961E332CF9 /* Pods-Clicker-dummy.m */; };
+		E1EDDCEC0E7B5811961DC7BEC5BBC9AB /* Pods-Clicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F353D78ACCA8F4B3B59C7DFCA230F7 /* Pods-Clicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB02B9BD05F6D9FE068902C877A77D3E /* Pods-ClickerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E20ACD60C33477BE6D1CC3EFD12BF09 /* Pods-ClickerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +45,21 @@
 			remoteGlobalIDString = 4FE3A31B65F3443392F9367D0115B130;
 			remoteInfo = "Pods-Clicker";
 		};
+		66229271DB158C36365B622B6E213CFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FE3A31B65F3443392F9367D0115B130;
+			remoteInfo = "Pods-Clicker";
+		};
 		770852E520B1C67CECD87C76BA0CC7E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 161D6312576A3115A5C2FE47CB5BEBA6;
+			remoteInfo = WiremockClient;
+		};
+		DE13E14DC4A929CBC55C6E7DE5BE58DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -53,48 +70,58 @@
 
 /* Begin PBXFileReference section */
 		005111897F78AB0E41FB1F43E989CFDA /* WiremockClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WiremockClient-umbrella.h"; sourceTree = "<group>"; };
-		06702A3EB5DBADBBE78B6219656F4882 /* Pods-Clicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clicker.release.xcconfig"; sourceTree = "<group>"; };
-		0C40C918E4F547F471B28CB66E07438B /* Pods-Clicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Clicker.modulemap"; sourceTree = "<group>"; };
-		119BDC66F1E3A756CDC5005492ECC0CE /* Pods-Clicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clicker-dummy.m"; sourceTree = "<group>"; };
+		00F353D78ACCA8F4B3B59C7DFCA230F7 /* Pods-Clicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clicker-umbrella.h"; sourceTree = "<group>"; };
+		06CFCEAF7E22E9C44D45EC5B78CBCAD6 /* Pods-Clicker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clicker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1085DBFE4932F867B7A36F9956B7CCFE /* Pods-ClickerIntegrationTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClickerIntegrationTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1198A25AA0D64FF7446DF6DABE43EC59 /* Pods-HeadlessFunctionalTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HeadlessFunctionalTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		15C4CE193C32FAD94B83653C15E42283 /* WiremockClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WiremockClient.xcconfig; sourceTree = "<group>"; };
-		24C866F3E81FE918DF22AD272E2532C6 /* Pods-Clicker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clicker-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E20ACD60C33477BE6D1CC3EFD12BF09 /* Pods-ClickerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClickerTests-umbrella.h"; sourceTree = "<group>"; };
+		237D487EB7B7221A44015B02C39AF315 /* Pods-ClickerIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClickerIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
+		29BFAD2C45225116955F807396183874 /* Pods-Clicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Clicker.modulemap"; sourceTree = "<group>"; };
 		2A7192077AED35C8BD4FFAA2ABCCC982 /* Pods_ClickerIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ClickerIntegrationTests.framework; path = "Pods-ClickerIntegrationTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F6767A2FECC92663FF4F2FC5831C5A2 /* Pods-ClickerIntegrationTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClickerIntegrationTests-frameworks.sh"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		35983386E88B33DAE1BC71C76B9DDE57 /* Pods-Clicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clicker-Info.plist"; sourceTree = "<group>"; };
-		3A1B452B4FF2B972C0B6852CC46F9F83 /* Pods-Clicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clicker-umbrella.h"; sourceTree = "<group>"; };
 		3B32681A21FFE2128F4AB6ADA2C0DB04 /* WiremockClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WiremockClient-Info.plist"; sourceTree = "<group>"; };
 		3D3071282DE791CA3233D381544A55EC /* Pods_Clicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Clicker.framework; path = "Pods-Clicker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E87639B0B805F5B832997FE2DECFF56 /* Pods-ClickerIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClickerIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
-		4341B1E7D6CE4331DF59577B5E1675AB /* Pods-ClickerIntegrationTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClickerIntegrationTests-Info.plist"; sourceTree = "<group>"; };
-		58DA0D13392A565B4C8EC96485A32067 /* Pods-ClickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClickerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6D3EFA5C121271A82669FC3E5FEB5D2C /* Pods-ClickerIntegrationTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClickerIntegrationTests-frameworks.sh"; sourceTree = "<group>"; };
-		6F49940AF0FFE96FABD6751B178B94D6 /* Pods-ClickerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClickerTests-umbrella.h"; sourceTree = "<group>"; };
+		45E70DA0C4FF7942A1EED6F2EF14485D /* Pods_HeadlessFunctionalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HeadlessFunctionalTests.framework; path = "Pods-HeadlessFunctionalTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		460FE9BF66D1241C2EDE8D104A386BE1 /* Pods-Clicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clicker-Info.plist"; sourceTree = "<group>"; };
+		474495BAC5567B6168B67F30AC7B5C41 /* Pods-ClickerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClickerTests-Info.plist"; sourceTree = "<group>"; };
+		48DA7FE8FFECF725DAA73315D76E2EC7 /* Pods-HeadlessFunctionalTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HeadlessFunctionalTests-umbrella.h"; sourceTree = "<group>"; };
+		4AC63D26767F44D961C5EB961E332CF9 /* Pods-Clicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clicker-dummy.m"; sourceTree = "<group>"; };
+		5E08A6BB3861BBBE943410D5E391F2EC /* Pods-ClickerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ClickerTests.modulemap"; sourceTree = "<group>"; };
+		67C407C6A7BAA3543BC81E21BC03AA24 /* Pods-ClickerIntegrationTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ClickerIntegrationTests.modulemap"; sourceTree = "<group>"; };
+		68C4BADCD2FF81875DCAB56226F7DF8D /* Pods-ClickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClickerTests.release.xcconfig"; sourceTree = "<group>"; };
 		7378436FCFFD730DBA06EF3BA8866258 /* WiremockClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WiremockClient.swift; path = Sources/WiremockClient/WiremockClient.swift; sourceTree = "<group>"; };
-		73C610DD92E4AB2C3FCFF76F828E7BCA /* Pods-ClickerIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClickerIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7820829AEC19C877CC0FF17A29919F0B /* Pods-Clicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clicker.debug.xcconfig"; sourceTree = "<group>"; };
 		78EA8F03DCC711E6B09751C869B9DB19 /* StubMapping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubMapping.swift; path = Sources/WiremockClient/StubMapping.swift; sourceTree = "<group>"; };
+		7CAE4B77966186C354DA89CB65116C8E /* Pods-HeadlessFunctionalTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HeadlessFunctionalTests-frameworks.sh"; sourceTree = "<group>"; };
+		7E59AEF4336F7760119EB05BBA289793 /* Pods-ClickerIntegrationTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClickerIntegrationTests-Info.plist"; sourceTree = "<group>"; };
 		86E6561900E7D5BA8345A1DD0F69E60C /* WiremockClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WiremockClient.framework; path = WiremockClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88ECE158DE7C70A10DCBA0DA0FAD588F /* Pods-ClickerIntegrationTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClickerIntegrationTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8BBC1D137F578449C6A9873E0C5173EA /* WiremockClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WiremockClient-dummy.m"; sourceTree = "<group>"; };
-		97AF007950BFCFB52B1A994FFBB3FF4E /* Pods-ClickerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClickerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		99B320BE03CA9DFC9691BB8F199E35D0 /* Pods-ClickerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ClickerTests.modulemap"; sourceTree = "<group>"; };
+		8BD1959EE75E8944AECF43FA253974F2 /* Pods-ClickerIntegrationTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClickerIntegrationTests-dummy.m"; sourceTree = "<group>"; };
+		9667FB76033895CAB10237BF46A2E72B /* Pods-ClickerIntegrationTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClickerIntegrationTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		986ADE870F28F9014762356AA9CD4633 /* Pods-ClickerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClickerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9A681E6F2D7AEB03F6539A4F6B115027 /* ResponseDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseDefinition.swift; path = Sources/WiremockClient/ResponseDefinition.swift; sourceTree = "<group>"; };
+		9C0F2CEBE10752AA890B41CCE20EB26F /* Pods-HeadlessFunctionalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeadlessFunctionalTests.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A702F44688E07B836AD148830C53EF14 /* Pods-Clicker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clicker-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A927F755F8D38C277EC8737ED602E3C5 /* Pods-ClickerIntegrationTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ClickerIntegrationTests.modulemap"; sourceTree = "<group>"; };
-		AB847F6B7D1DDF948EC3211835C35DF9 /* Pods-ClickerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClickerTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		AF082F3581401EC9CEE88E74C7E61270 /* Pods-ClickerIntegrationTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClickerIntegrationTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A5C2C7030F58E7EB8549AD59B4B64342 /* Pods-Clicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clicker.release.xcconfig"; sourceTree = "<group>"; };
+		A7F60F57496E958E3C05E942AF4B8347 /* Pods-HeadlessFunctionalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeadlessFunctionalTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B39418917A3D1A9B85E9FCCF5D5BEFBA /* Pods-ClickerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClickerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6A4D8DD4D44730EFBC5D1674D54F4B3 /* Pods-Clicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clicker.debug.xcconfig"; sourceTree = "<group>"; };
 		B89F653B40642A3B8D2B3D7A30AE61FC /* UrlPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UrlPattern.swift; path = Sources/WiremockClient/UrlPattern.swift; sourceTree = "<group>"; };
 		BCC11367A07BDE3878D96A4AC620C0E8 /* RequestPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestPattern.swift; path = Sources/WiremockClient/RequestPattern.swift; sourceTree = "<group>"; };
-		C7665DAA4DC11ED0A85BFD5778233543 /* Pods-ClickerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClickerTests-dummy.m"; sourceTree = "<group>"; };
-		CE88EB057333936CF25798689B74A47B /* Pods-ClickerIntegrationTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClickerIntegrationTests-dummy.m"; sourceTree = "<group>"; };
-		D28A513CB6A4C804B8D8BF4084410D58 /* Pods-ClickerIntegrationTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClickerIntegrationTests-umbrella.h"; sourceTree = "<group>"; };
+		C082E7A99C64C22F6419C47968AC2051 /* Pods-ClickerIntegrationTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClickerIntegrationTests-umbrella.h"; sourceTree = "<group>"; };
+		C34CFB30923755BA502863F497C4E87C /* Pods-HeadlessFunctionalTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HeadlessFunctionalTests-dummy.m"; sourceTree = "<group>"; };
+		C3AA4E314331835E71DDD177267DF4BB /* Pods-Clicker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clicker-acknowledgements.plist"; sourceTree = "<group>"; };
+		C93FD37802B69C922221465ADC495F67 /* Pods-HeadlessFunctionalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeadlessFunctionalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D14ED389EAFC2BDBFB5F578307420912 /* Pods-ClickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D573DAF6738E7931C6EFB0C4E696AC1F /* Pods-HeadlessFunctionalTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HeadlessFunctionalTests.modulemap"; sourceTree = "<group>"; };
 		D7B20F7CCCD4752EA95F8DDB3242C053 /* RequestMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestMethod.swift; path = Sources/WiremockClient/RequestMethod.swift; sourceTree = "<group>"; };
 		DF9B9544AC62BAC627BFC9A6E94E43F6 /* WiremockClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WiremockClient.modulemap; sourceTree = "<group>"; };
 		E42EAAD285AB6D616A0874D96C96EA83 /* Pods_ClickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ClickerTests.framework; path = "Pods-ClickerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA1DE7E62A57B7372D9A4A68DA242A74 /* Pods-ClickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClickerTests.release.xcconfig"; sourceTree = "<group>"; };
+		EB369A4BFDCB36308292415F1272864F /* Pods-ClickerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClickerTests-dummy.m"; sourceTree = "<group>"; };
 		F8352653D9F6FE3AC5B2249CA39687BA /* WiremockClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WiremockClient-prefix.pch"; sourceTree = "<group>"; };
-		FBA48174919A797116F84A1466893816 /* Pods-ClickerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClickerTests-Info.plist"; sourceTree = "<group>"; };
+		F8FC3408F5E2499D70A65D0F8D834069 /* Pods-HeadlessFunctionalTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeadlessFunctionalTests-Info.plist"; sourceTree = "<group>"; };
+		FBB3B8360B3B09F20B042F3F1ED6F3B3 /* Pods-ClickerIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClickerIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +130,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C6C3A46E6A0E87115EB0FF466FB12EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51621BF95B1DFBEBC5D0E56375F4444D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C0FC3BB3EC43E0D671FABAA935C61C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,41 +168,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13E4E6B957F35D27DBC9D2132E6AE4F5 /* Products */ = {
+		08BB186A0B848891EBEB034BA757D075 /* Pods-ClickerTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D3071282DE791CA3233D381544A55EC /* Pods_Clicker.framework */,
-				2A7192077AED35C8BD4FFAA2ABCCC982 /* Pods_ClickerIntegrationTests.framework */,
-				E42EAAD285AB6D616A0874D96C96EA83 /* Pods_ClickerTests.framework */,
-				86E6561900E7D5BA8345A1DD0F69E60C /* WiremockClient.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2F29138E9E7632FC2EE50AE054B77298 /* Pods-ClickerTests */ = {
-			isa = PBXGroup;
-			children = (
-				99B320BE03CA9DFC9691BB8F199E35D0 /* Pods-ClickerTests.modulemap */,
-				97AF007950BFCFB52B1A994FFBB3FF4E /* Pods-ClickerTests-acknowledgements.markdown */,
-				AB847F6B7D1DDF948EC3211835C35DF9 /* Pods-ClickerTests-acknowledgements.plist */,
-				C7665DAA4DC11ED0A85BFD5778233543 /* Pods-ClickerTests-dummy.m */,
-				FBA48174919A797116F84A1466893816 /* Pods-ClickerTests-Info.plist */,
-				6F49940AF0FFE96FABD6751B178B94D6 /* Pods-ClickerTests-umbrella.h */,
-				58DA0D13392A565B4C8EC96485A32067 /* Pods-ClickerTests.debug.xcconfig */,
-				EA1DE7E62A57B7372D9A4A68DA242A74 /* Pods-ClickerTests.release.xcconfig */,
+				5E08A6BB3861BBBE943410D5E391F2EC /* Pods-ClickerTests.modulemap */,
+				B39418917A3D1A9B85E9FCCF5D5BEFBA /* Pods-ClickerTests-acknowledgements.markdown */,
+				986ADE870F28F9014762356AA9CD4633 /* Pods-ClickerTests-acknowledgements.plist */,
+				EB369A4BFDCB36308292415F1272864F /* Pods-ClickerTests-dummy.m */,
+				474495BAC5567B6168B67F30AC7B5C41 /* Pods-ClickerTests-Info.plist */,
+				1E20ACD60C33477BE6D1CC3EFD12BF09 /* Pods-ClickerTests-umbrella.h */,
+				D14ED389EAFC2BDBFB5F578307420912 /* Pods-ClickerTests.debug.xcconfig */,
+				68C4BADCD2FF81875DCAB56226F7DF8D /* Pods-ClickerTests.release.xcconfig */,
 			);
 			name = "Pods-ClickerTests";
 			path = "Target Support Files/Pods-ClickerTests";
 			sourceTree = "<group>";
 		};
-		4938CF9EB9E559D3972B8E08B79F50F2 /* Targets Support Files */ = {
+		1475BCCA353DD00A211F67F6A01D596F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E9D164B2DBBCBCAEC9E326432CE203A3 /* Pods-Clicker */,
-				A4AD77EF2709DD53461E2273F084272A /* Pods-ClickerIntegrationTests */,
-				2F29138E9E7632FC2EE50AE054B77298 /* Pods-ClickerTests */,
+				B789D264978159FD71335A5DA795A98B /* Pods-Clicker */,
+				5DE625B2FECC124E6793554FDB5DEDD7 /* Pods-ClickerIntegrationTests */,
+				08BB186A0B848891EBEB034BA757D075 /* Pods-ClickerTests */,
+				FC93D3A054F2A35B04DC9F7A0253F66C /* Pods-HeadlessFunctionalTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		557113AC7868658E4891530783B8CC0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D3071282DE791CA3233D381544A55EC /* Pods_Clicker.framework */,
+				2A7192077AED35C8BD4FFAA2ABCCC982 /* Pods_ClickerIntegrationTests.framework */,
+				E42EAAD285AB6D616A0874D96C96EA83 /* Pods_ClickerTests.framework */,
+				45E70DA0C4FF7942A1EED6F2EF14485D /* Pods_HeadlessFunctionalTests.framework */,
+				86E6561900E7D5BA8345A1DD0F69E60C /* WiremockClient.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DE625B2FECC124E6793554FDB5DEDD7 /* Pods-ClickerIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				67C407C6A7BAA3543BC81E21BC03AA24 /* Pods-ClickerIntegrationTests.modulemap */,
+				1085DBFE4932F867B7A36F9956B7CCFE /* Pods-ClickerIntegrationTests-acknowledgements.markdown */,
+				9667FB76033895CAB10237BF46A2E72B /* Pods-ClickerIntegrationTests-acknowledgements.plist */,
+				8BD1959EE75E8944AECF43FA253974F2 /* Pods-ClickerIntegrationTests-dummy.m */,
+				2F6767A2FECC92663FF4F2FC5831C5A2 /* Pods-ClickerIntegrationTests-frameworks.sh */,
+				7E59AEF4336F7760119EB05BBA289793 /* Pods-ClickerIntegrationTests-Info.plist */,
+				C082E7A99C64C22F6419C47968AC2051 /* Pods-ClickerIntegrationTests-umbrella.h */,
+				FBB3B8360B3B09F20B042F3F1ED6F3B3 /* Pods-ClickerIntegrationTests.debug.xcconfig */,
+				237D487EB7B7221A44015B02C39AF315 /* Pods-ClickerIntegrationTests.release.xcconfig */,
+			);
+			name = "Pods-ClickerIntegrationTests";
+			path = "Target Support Files/Pods-ClickerIntegrationTests";
 			sourceTree = "<group>";
 		};
 		7CCE7021F3026B488BACEF5901BA4F8E /* WiremockClient */ = {
@@ -193,21 +247,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A4AD77EF2709DD53461E2273F084272A /* Pods-ClickerIntegrationTests */ = {
+		B789D264978159FD71335A5DA795A98B /* Pods-Clicker */ = {
 			isa = PBXGroup;
 			children = (
-				A927F755F8D38C277EC8737ED602E3C5 /* Pods-ClickerIntegrationTests.modulemap */,
-				88ECE158DE7C70A10DCBA0DA0FAD588F /* Pods-ClickerIntegrationTests-acknowledgements.markdown */,
-				AF082F3581401EC9CEE88E74C7E61270 /* Pods-ClickerIntegrationTests-acknowledgements.plist */,
-				CE88EB057333936CF25798689B74A47B /* Pods-ClickerIntegrationTests-dummy.m */,
-				6D3EFA5C121271A82669FC3E5FEB5D2C /* Pods-ClickerIntegrationTests-frameworks.sh */,
-				4341B1E7D6CE4331DF59577B5E1675AB /* Pods-ClickerIntegrationTests-Info.plist */,
-				D28A513CB6A4C804B8D8BF4084410D58 /* Pods-ClickerIntegrationTests-umbrella.h */,
-				73C610DD92E4AB2C3FCFF76F828E7BCA /* Pods-ClickerIntegrationTests.debug.xcconfig */,
-				3E87639B0B805F5B832997FE2DECFF56 /* Pods-ClickerIntegrationTests.release.xcconfig */,
+				29BFAD2C45225116955F807396183874 /* Pods-Clicker.modulemap */,
+				06CFCEAF7E22E9C44D45EC5B78CBCAD6 /* Pods-Clicker-acknowledgements.markdown */,
+				C3AA4E314331835E71DDD177267DF4BB /* Pods-Clicker-acknowledgements.plist */,
+				4AC63D26767F44D961C5EB961E332CF9 /* Pods-Clicker-dummy.m */,
+				460FE9BF66D1241C2EDE8D104A386BE1 /* Pods-Clicker-Info.plist */,
+				00F353D78ACCA8F4B3B59C7DFCA230F7 /* Pods-Clicker-umbrella.h */,
+				B6A4D8DD4D44730EFBC5D1674D54F4B3 /* Pods-Clicker.debug.xcconfig */,
+				A5C2C7030F58E7EB8549AD59B4B64342 /* Pods-Clicker.release.xcconfig */,
 			);
-			name = "Pods-ClickerIntegrationTests";
-			path = "Target Support Files/Pods-ClickerIntegrationTests";
+			name = "Pods-Clicker";
+			path = "Target Support Files/Pods-Clicker";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -238,8 +291,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				81097F4D2621F965CF8BFB79D44E4D18 /* Pods */,
-				13E4E6B957F35D27DBC9D2132E6AE4F5 /* Products */,
-				4938CF9EB9E559D3972B8E08B79F50F2 /* Targets Support Files */,
+				557113AC7868658E4891530783B8CC0D /* Products */,
+				1475BCCA353DD00A211F67F6A01D596F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,25 +304,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E9D164B2DBBCBCAEC9E326432CE203A3 /* Pods-Clicker */ = {
+		FC93D3A054F2A35B04DC9F7A0253F66C /* Pods-HeadlessFunctionalTests */ = {
 			isa = PBXGroup;
 			children = (
-				0C40C918E4F547F471B28CB66E07438B /* Pods-Clicker.modulemap */,
-				A702F44688E07B836AD148830C53EF14 /* Pods-Clicker-acknowledgements.markdown */,
-				24C866F3E81FE918DF22AD272E2532C6 /* Pods-Clicker-acknowledgements.plist */,
-				119BDC66F1E3A756CDC5005492ECC0CE /* Pods-Clicker-dummy.m */,
-				35983386E88B33DAE1BC71C76B9DDE57 /* Pods-Clicker-Info.plist */,
-				3A1B452B4FF2B972C0B6852CC46F9F83 /* Pods-Clicker-umbrella.h */,
-				7820829AEC19C877CC0FF17A29919F0B /* Pods-Clicker.debug.xcconfig */,
-				06702A3EB5DBADBBE78B6219656F4882 /* Pods-Clicker.release.xcconfig */,
+				D573DAF6738E7931C6EFB0C4E696AC1F /* Pods-HeadlessFunctionalTests.modulemap */,
+				1198A25AA0D64FF7446DF6DABE43EC59 /* Pods-HeadlessFunctionalTests-acknowledgements.markdown */,
+				A7F60F57496E958E3C05E942AF4B8347 /* Pods-HeadlessFunctionalTests-acknowledgements.plist */,
+				C34CFB30923755BA502863F497C4E87C /* Pods-HeadlessFunctionalTests-dummy.m */,
+				7CAE4B77966186C354DA89CB65116C8E /* Pods-HeadlessFunctionalTests-frameworks.sh */,
+				F8FC3408F5E2499D70A65D0F8D834069 /* Pods-HeadlessFunctionalTests-Info.plist */,
+				48DA7FE8FFECF725DAA73315D76E2EC7 /* Pods-HeadlessFunctionalTests-umbrella.h */,
+				C93FD37802B69C922221465ADC495F67 /* Pods-HeadlessFunctionalTests.debug.xcconfig */,
+				9C0F2CEBE10752AA890B41CCE20EB26F /* Pods-HeadlessFunctionalTests.release.xcconfig */,
 			);
-			name = "Pods-Clicker";
-			path = "Target Support Files/Pods-Clicker";
+			name = "Pods-HeadlessFunctionalTests";
+			path = "Target Support Files/Pods-HeadlessFunctionalTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2DB139F0179FF4E57FDCF8192123198B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0716B04E1EBDF57D702F3A10B8FE46E0 /* Pods-HeadlessFunctionalTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D21665F9DAA4E966016725E5B7BE261 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,6 +403,26 @@
 			productReference = 3D3071282DE791CA3233D381544A55EC /* Pods_Clicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A7C6A248C6279AFCB4700414F32B0032 /* Pods-HeadlessFunctionalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0526414612A7CB63952A7755270AC424 /* Build configuration list for PBXNativeTarget "Pods-HeadlessFunctionalTests" */;
+			buildPhases = (
+				2DB139F0179FF4E57FDCF8192123198B /* Headers */,
+				32763CC75F875F2672AD14D4D11B5EAC /* Sources */,
+				51621BF95B1DFBEBC5D0E56375F4444D /* Frameworks */,
+				A3BC55A0E2E836535BCF9E9C79C93246 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A9A281233614446CB85D627A966868B /* PBXTargetDependency */,
+				FD1065F0EA868B2BBEE888832D6CF52B /* PBXTargetDependency */,
+			);
+			name = "Pods-HeadlessFunctionalTests";
+			productName = "Pods-HeadlessFunctionalTests";
+			productReference = 45E70DA0C4FF7942A1EED6F2EF14485D /* Pods_HeadlessFunctionalTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D24D013059EE0BAE2A499ED0D08E18F0 /* Pods-ClickerTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C060EA16240B179773207F4D91348BE /* Build configuration list for PBXNativeTarget "Pods-ClickerTests" */;
@@ -398,13 +480,14 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 13E4E6B957F35D27DBC9D2132E6AE4F5 /* Products */;
+			productRefGroup = 557113AC7868658E4891530783B8CC0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4FE3A31B65F3443392F9367D0115B130 /* Pods-Clicker */,
 				FD2CA10005283561F77112B1CB2D291D /* Pods-ClickerIntegrationTests */,
 				D24D013059EE0BAE2A499ED0D08E18F0 /* Pods-ClickerTests */,
+				A7C6A248C6279AFCB4700414F32B0032 /* Pods-HeadlessFunctionalTests */,
 				161D6312576A3115A5C2FE47CB5BEBA6 /* WiremockClient */,
 			);
 		};
@@ -412,6 +495,13 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		0A4F4EC058D7247DA977A8C8059E1559 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3BC55A0E2E836535BCF9E9C79C93246 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -447,6 +537,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2DA2E965F75E0EE9757A192E50B646 /* Pods-ClickerIntegrationTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32763CC75F875F2672AD14D4D11B5EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8AA36A9536DDFE739CF0AAE035745A1 /* Pods-HeadlessFunctionalTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +599,18 @@
 			target = 4FE3A31B65F3443392F9367D0115B130 /* Pods-Clicker */;
 			targetProxy = 4AD06FA60DCBFEA3285A610E5AA18157 /* PBXContainerItemProxy */;
 		};
+		9A9A281233614446CB85D627A966868B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Clicker";
+			target = 4FE3A31B65F3443392F9367D0115B130 /* Pods-Clicker */;
+			targetProxy = 66229271DB158C36365B622B6E213CFD /* PBXContainerItemProxy */;
+		};
+		FD1065F0EA868B2BBEE888832D6CF52B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WiremockClient;
+			target = 161D6312576A3115A5C2FE47CB5BEBA6 /* WiremockClient */;
+			targetProxy = DE13E14DC4A929CBC55C6E7DE5BE58DE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -542,7 +652,7 @@
 		};
 		585712F308B96252E8AC3396AB69746F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73C610DD92E4AB2C3FCFF76F828E7BCA /* Pods-ClickerIntegrationTests.debug.xcconfig */;
+			baseConfigurationReference = FBB3B8360B3B09F20B042F3F1ED6F3B3 /* Pods-ClickerIntegrationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -644,7 +754,7 @@
 		};
 		67E73A981B24917967A99A7D887E735F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA1DE7E62A57B7372D9A4A68DA242A74 /* Pods-ClickerTests.release.xcconfig */;
+			baseConfigurationReference = 68C4BADCD2FF81875DCAB56226F7DF8D /* Pods-ClickerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -683,7 +793,7 @@
 		};
 		98DAA381EBFD5AD6C2C6BF5C81C948C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7820829AEC19C877CC0FF17A29919F0B /* Pods-Clicker.debug.xcconfig */;
+			baseConfigurationReference = B6A4D8DD4D44730EFBC5D1674D54F4B3 /* Pods-Clicker.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -781,7 +891,7 @@
 		};
 		B3E191E2336F47B8CADBBEF38635BC77 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58DA0D13392A565B4C8EC96485A32067 /* Pods-ClickerTests.debug.xcconfig */;
+			baseConfigurationReference = D14ED389EAFC2BDBFB5F578307420912 /* Pods-ClickerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -819,7 +929,7 @@
 		};
 		B6EBCAF9D11EF4272A7AF668F33056D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E87639B0B805F5B832997FE2DECFF56 /* Pods-ClickerIntegrationTests.release.xcconfig */;
+			baseConfigurationReference = 237D487EB7B7221A44015B02C39AF315 /* Pods-ClickerIntegrationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -858,7 +968,7 @@
 		};
 		C76E6AEEB064AE7C0FEBFEA53C4AE1A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06702A3EB5DBADBBE78B6219656F4882 /* Pods-Clicker.release.xcconfig */;
+			baseConfigurationReference = A5C2C7030F58E7EB8549AD59B4B64342 /* Pods-Clicker.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -895,6 +1005,44 @@
 			};
 			name = Release;
 		};
+		CAB80A58911B860EA6B3CC5BFC5FBD00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C93FD37802B69C922221465ADC495F67 /* Pods-HeadlessFunctionalTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeadlessFunctionalTests/Pods-HeadlessFunctionalTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeadlessFunctionalTests/Pods-HeadlessFunctionalTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		DAAE552B1F974763C4E0658DFEE0BA3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15C4CE193C32FAD94B83653C15E42283 /* WiremockClient.xcconfig */;
@@ -930,9 +1078,57 @@
 			};
 			name = Debug;
 		};
+		F6327E504F3FBBE849175DE92A8AB4FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C0F2CEBE10752AA890B41CCE20EB26F /* Pods-HeadlessFunctionalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeadlessFunctionalTests/Pods-HeadlessFunctionalTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeadlessFunctionalTests/Pods-HeadlessFunctionalTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0526414612A7CB63952A7755270AC424 /* Build configuration list for PBXNativeTarget "Pods-HeadlessFunctionalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB80A58911B860EA6B3CC5BFC5FBD00 /* Debug */,
+				F6327E504F3FBBE849175DE92A8AB4FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0F0B11B1F225E17AD677FDCC3E4F45E9 /* Build configuration list for PBXNativeTarget "Pods-Clicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -18,4 +18,10 @@ target 'Clicker' do
     pod 'WiremockClient'
   end
 
+  target 'HeadlessFunctionalTests' do
+    inherit! :search_paths
+
+    pod 'WiremockClient'
+  end
+
 end

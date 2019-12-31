@@ -2,6 +2,9 @@ import Foundation
 
 @testable import Clicker
 
+// Ideally the verification tooling would just be part of WiremockClient...
+// There's already an open PR for that ()
+// This simple playback tool is just a temporary fix until that PR is merged 😁
 class WiremockVerify: CommunicatorType {
     func replayRequests() -> RequestPlayback? {
         var result: RequestPlayback?
@@ -32,5 +35,5 @@ struct RecordedRequestAttributes: Codable {
 struct RecordedRequest: Codable {
     let url: String?
     let method: String?
-    let body: String?
+    let body: String? // TODO replace with ValueType generic
 }
