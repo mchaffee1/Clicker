@@ -45,15 +45,10 @@ class CounterCommunicatorIntegrationTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 0.5)
 
-        let requestPlayback = WiremockVerify().replayRequests()
-        let postRequests = requestPlayback?.requests.filter {
-            $0.request.method == "POST"
-                && $0.request.url == "/counter"
-            } ?? []
-
-        let postedCount = try? Count.from(string: postRequests.first?.request.body).get()
+        let postRequests = WiremockVerify().replayPosts(to: "/counter")
+        let mostRecentPostedCount = try? Count.from(string: postRequests.first?.body).get()
 
         XCTAssertEqual(postRequests.count, 1)
-        XCTAssertEqual(postedCount?.count, randomInt)
+        XCTAssertEqual(mostRecentPostedCount?.count, randomInt)
     }
 }

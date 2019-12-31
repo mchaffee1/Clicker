@@ -58,17 +58,7 @@ class CounterTests: XCTestCase {
         XCTAssertEqual(mostRecentPostedCount(), 2 + randomApiCount, "After a second tap, the app should post a count incremented twice")
     }
 
-    func replayPosts() -> [RecordedRequest] {
-        return WiremockVerify().replayRequests()?.requests
-            .filter { $0.request.method == "POST" }
-            .map { $0.request } ?? []
-    }
-
     func mostRecentPostedCount() -> Int? {
-        return try? Count.from(string: replayPosts().first?.body).get().count
-    }
-
-    func postCount() -> Int {
-        return 0
+        return try? Count.from(string: WiremockVerify().replayPosts(to: "/counter").first?.body).get().count
     }
 }
