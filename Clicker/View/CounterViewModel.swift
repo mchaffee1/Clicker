@@ -1,14 +1,5 @@
 import Foundation
 
-protocol CounterViewModelType {
-    var countText: String { get }
-    func tap()
-}
-
-protocol CounterViewType: class {
-    func showData(from: CounterViewModelType)
-}
-
 struct CounterViewModel: CounterViewModelType {
     let counterLogicController: CounterLogicControllerType
     weak var view: CounterViewType?

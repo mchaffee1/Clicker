@@ -2,12 +2,12 @@ import Foundation
 import UIKit
 
 class CounterPageViewController: UIViewController, CounterViewType {
-    var dependencies: DependenciesType = Dependencies.shared
+    var counterViewModelProvider: CounterViewModelProviderType = Dependencies.shared
     private var viewModel: CounterViewModelType?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let viewModel = dependencies.buildCounterViewModel(for: self)
+        let viewModel = counterViewModelProvider.buildCounterViewModel(for: self)
         showData(from: viewModel)
         self.viewModel = viewModel
     }

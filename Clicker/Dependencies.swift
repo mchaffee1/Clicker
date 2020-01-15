@@ -1,12 +1,6 @@
 import Foundation
 import UIKit
 
-protocol DependenciesType {
-    var application: UIApplication { get }
-    var counterLogicController: CounterLogicControllerType { get }
-    func buildCounterViewModel(for: CounterViewType?) -> CounterViewModelType
-}
-
 /*
  DEPENDENCIES
  ------------
