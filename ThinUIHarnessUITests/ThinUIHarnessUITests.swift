@@ -20,15 +20,15 @@ class ThinUIHarnessUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        tapCoordinate(in: app, at: 100.0, and: 200.0)
-        XCUIApplication().staticTexts["43"].tap()
-        XCUIApplication().staticTexts["44"].tap()
+        tapCoordinate(in: app, atX: 100.0, andY: 200.0)
+        app.staticTexts["43"].tap()
+        app.staticTexts["44"].tap()
 
-        XCTAssertTrue(XCUIApplication().staticTexts["45"].exists)
+        XCTAssertTrue(app.staticTexts["45"].exists)
     }
 
-    func tapCoordinate(in app: XCUIApplication, at xCoordinate: Double, and yCoordinate: Double) {
-        let normalized = app.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 0))
+    func tapCoordinate(in element: XCUIElement, atX xCoordinate: Double, andY yCoordinate: Double) {
+        let normalized = element.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 0))
         let coordinate = normalized.withOffset(CGVector(dx: xCoordinate, dy: yCoordinate))
         coordinate.tap()
     }

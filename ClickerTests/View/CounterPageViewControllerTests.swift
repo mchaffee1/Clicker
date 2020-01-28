@@ -18,7 +18,7 @@ class CounterPageViewControllerTests: XCTestCase {
         counterPageViewController = CounterPageViewController()
         mockDependencies = MockDependencies()
 
-        counterPageViewController.dependencies = mockDependencies
+        counterPageViewController.counterViewModelProvider = mockDependencies
         counterPageViewController.countLabel = mockLabel
     }
 

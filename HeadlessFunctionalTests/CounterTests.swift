@@ -59,6 +59,9 @@ class CounterTests: XCTestCase {
     }
 
     func mostRecentPostedCount() -> Int? {
-        return try? Count.from(string: WiremockVerify().replayPosts(to: "/counter").first?.body).get().count
+        guard let firstPost = WiremockVerify().replayPosts(to: "/counter").first else {
+            return nil
+        }
+        return try? Count.from(string: firstPost.body).get().count
     }
 }
