@@ -22,6 +22,7 @@
 		364ACCE6234FA66900260E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364ACCE5234FA66900260E25 /* AppDelegate.swift */; };
 		364ACCEB234FA66900260E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCE9234FA66900260E25 /* Main.storyboard */; };
 		364ACCED234FA66A00260E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCEC234FA66A00260E25 /* Assets.xcassets */; };
+		366BB2B723E398C300310FE0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366BB2B623E398C300310FE0 /* main.swift */; };
 		36732EB323592DDA0050A066 /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4A7FE2358FF9B00E0BC48 /* CounterTests.swift */; };
 		36732EB423592EC20050A066 /* MockCounterLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD065F234FAD3F00CF676C /* MockCounterLogicController.swift */; };
 		36732EB523592EC20050A066 /* MockCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80C234FD07B003BC64C /* MockCounterView.swift */; };
@@ -119,6 +120,7 @@
 		364ACCF1234FA66A00260E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		364ACCF6234FA66B00260E25 /* ClickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		364ACCFC234FA66B00260E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366BB2B623E398C300310FE0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		36732EA923592DCE0050A066 /* HeadlessFunctionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadlessFunctionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36732EAD23592DCE0050A066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36732EB7235930290050A066 /* InMemoryCounterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCounterRepository.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				36E3638623CFB001001EFDEA /* Info.plist */,
 				36E363A423CFB4DC001EFDEA /* Dependencies.swift */,
 				36E363AE23CFB83F001EFDEA /* MockCounterViewModel.swift */,
+				366BB2B623E398C300310FE0 /* main.swift */,
 			);
 			path = ThinUIHarness;
 			sourceTree = "<group>";
@@ -858,6 +861,7 @@
 				36E3637923CFAFFE001EFDEA /* AppDelegate.swift in Sources */,
 				36E363A523CFB4DC001EFDEA /* Dependencies.swift in Sources */,
 				36E363AB23CFB633001EFDEA /* CounterViewType.swift in Sources */,
+				366BB2B723E398C300310FE0 /* main.swift in Sources */,
 				36E3639923CFB117001EFDEA /* CounterPageViewController.swift in Sources */,
 				36E363A123CFB256001EFDEA /* CounterViewModelProviderType.swift in Sources */,
 				36E3637B23CFAFFE001EFDEA /* SceneDelegate.swift in Sources */,
