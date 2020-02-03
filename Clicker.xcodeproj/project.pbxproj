@@ -23,6 +23,9 @@
 		364ACCEB234FA66900260E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCE9234FA66900260E25 /* Main.storyboard */; };
 		364ACCED234FA66A00260E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364ACCEC234FA66A00260E25 /* Assets.xcassets */; };
 		366BB2B723E398C300310FE0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366BB2B623E398C300310FE0 /* main.swift */; };
+		366BB2B923E483B000310FE0 /* SelfHydratingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366BB2B823E483B000310FE0 /* SelfHydratingViewController.swift */; };
+		366BB2BA23E483ED00310FE0 /* SelfHydratingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366BB2B823E483B000310FE0 /* SelfHydratingViewController.swift */; };
+		366BB2BB23E484D400310FE0 /* CounterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80E234FD31A003BC64C /* CounterPageViewController.swift */; };
 		36732EB323592DDA0050A066 /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4A7FE2358FF9B00E0BC48 /* CounterTests.swift */; };
 		36732EB423592EC20050A066 /* MockCounterLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD065F234FAD3F00CF676C /* MockCounterLogicController.swift */; };
 		36732EB523592EC20050A066 /* MockCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80C234FD07B003BC64C /* MockCounterView.swift */; };
@@ -47,7 +50,6 @@
 		36E3638223CFB001001EFDEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E3638123CFB001001EFDEA /* Assets.xcassets */; };
 		36E3638523CFB001001EFDEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E3638323CFB001001EFDEA /* LaunchScreen.storyboard */; };
 		36E3639023CFB001001EFDEA /* ThinUIHarnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3638F23CFB001001EFDEA /* ThinUIHarnessUITests.swift */; };
-		36E3639923CFB117001EFDEA /* CounterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80E234FD31A003BC64C /* CounterPageViewController.swift */; };
 		36E3639B23CFB117001EFDEA /* UILabelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36732EC42360D5F00050A066 /* UILabelType.swift */; };
 		36E3639D23CFB1EE001EFDEA /* DependenciesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3639C23CFB1EE001EFDEA /* DependenciesType.swift */; };
 		36E363A023CFB232001EFDEA /* CounterViewModelProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3639F23CFB232001EFDEA /* CounterViewModelProviderType.swift */; };
@@ -121,6 +123,7 @@
 		364ACCF6234FA66B00260E25 /* ClickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		364ACCFC234FA66B00260E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		366BB2B623E398C300310FE0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		366BB2B823E483B000310FE0 /* SelfHydratingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfHydratingViewController.swift; sourceTree = "<group>"; };
 		36732EA923592DCE0050A066 /* HeadlessFunctionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadlessFunctionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36732EAD23592DCE0050A066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36732EB7235930290050A066 /* InMemoryCounterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCounterRepository.swift; sourceTree = "<group>"; };
@@ -288,11 +291,11 @@
 				364ACCEC234FA66A00260E25 /* Assets.xcassets */,
 				36C4B810234FE758003BC64C /* Dependencies.swift */,
 				364ACCF1234FA66A00260E25 /* Info.plist */,
-				364ACCE9234FA66900260E25 /* Main.storyboard */,
 				36C4B81B2350A885003BC64C /* main.swift */,
 				36E3639C23CFB1EE001EFDEA /* DependenciesType.swift */,
 				36E3639F23CFB232001EFDEA /* CounterViewModelProviderType.swift */,
 				36E363A223CFB34F001EFDEA /* CounterViewModelProviderType+Shared.swift */,
+				366BB2B823E483B000310FE0 /* SelfHydratingViewController.swift */,
 			);
 			path = Clicker;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 		36FD0652234FA93900CF676C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				364ACCE9234FA66900260E25 /* Main.storyboard */,
 				36C4B80E234FD31A003BC64C /* CounterPageViewController.swift */,
 				36FD0654234FA95700CF676C /* CounterViewModel.swift */,
 				36732EC42360D5F00050A066 /* UILabelType.swift */,
@@ -796,6 +800,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FD065A234FAA2100CF676C /* CounterLogicController.swift in Sources */,
+				366BB2B923E483B000310FE0 /* SelfHydratingViewController.swift in Sources */,
 				36E363AA23CFB633001EFDEA /* CounterViewType.swift in Sources */,
 				363DF97823BB97BE00869BD6 /* String+Error.swift in Sources */,
 				36FB853B23B66B42009F4A0E /* Count.swift in Sources */,
@@ -862,9 +867,10 @@
 				36E363A523CFB4DC001EFDEA /* Dependencies.swift in Sources */,
 				36E363AB23CFB633001EFDEA /* CounterViewType.swift in Sources */,
 				366BB2B723E398C300310FE0 /* main.swift in Sources */,
-				36E3639923CFB117001EFDEA /* CounterPageViewController.swift in Sources */,
 				36E363A123CFB256001EFDEA /* CounterViewModelProviderType.swift in Sources */,
 				36E3637B23CFAFFE001EFDEA /* SceneDelegate.swift in Sources */,
+				366BB2BB23E484D400310FE0 /* CounterPageViewController.swift in Sources */,
+				366BB2BA23E483ED00310FE0 /* SelfHydratingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
