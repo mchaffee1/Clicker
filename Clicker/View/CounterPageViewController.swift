@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class CounterPageViewController: UIViewController, CounterViewType {
+class CounterPageViewController: UIViewController, SelfHydratingViewController, CounterViewType {
     var counterViewModelProvider: CounterViewModelProviderType = Dependencies.shared
     private var viewModel: CounterViewModelType?
 
