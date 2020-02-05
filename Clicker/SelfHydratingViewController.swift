@@ -1,6 +1,7 @@
 import Foundation
 import UIKit
 
+// TODO move to Thin UI Test Harness
 public protocol SelfHydratingViewController: UIViewController {
     static func hydrate() -> Self?
 }

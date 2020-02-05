@@ -1,5 +1,6 @@
 import Foundation
 
+// TODO move to Thin UI Tests
 class MockCounterViewModel: CounterViewModelType {
     static let shared = MockCounterViewModel()
 

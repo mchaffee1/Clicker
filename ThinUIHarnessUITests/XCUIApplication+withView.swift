@@ -4,7 +4,7 @@ import XCTest
 
 extension XCUIApplication {
     func withView(ofClass className: String) -> Self {
-        launchArguments = ["-view", className]
+        launchArguments.append(contentsOf: ["-view", className])
         return self
     }
 }
