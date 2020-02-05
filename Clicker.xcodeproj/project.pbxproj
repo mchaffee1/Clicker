@@ -28,6 +28,7 @@
 		366BB2BB23E484D400310FE0 /* CounterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80E234FD31A003BC64C /* CounterPageViewController.swift */; };
 		366BB2FC23E83FD500310FE0 /* CounterPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 366BB2FB23E83FD500310FE0 /* CounterPageViewController.xib */; };
 		3671B4BB23EA280700C56CC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3671B4BA23EA280700C56CC2 /* LaunchScreen.storyboard */; };
+		3671B4BE23EAEB0800C56CC2 /* XCUIApplication+withView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3671B4BC23EAEAA500C56CC2 /* XCUIApplication+withView.swift */; };
 		36732EB323592DDA0050A066 /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4A7FE2358FF9B00E0BC48 /* CounterTests.swift */; };
 		36732EB423592EC20050A066 /* MockCounterLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD065F234FAD3F00CF676C /* MockCounterLogicController.swift */; };
 		36732EB523592EC20050A066 /* MockCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B80C234FD07B003BC64C /* MockCounterView.swift */; };
@@ -47,7 +48,6 @@
 		36C4B81C2350A885003BC64C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B81B2350A885003BC64C /* main.swift */; };
 		36E3637923CFAFFE001EFDEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3637823CFAFFE001EFDEA /* AppDelegate.swift */; };
 		36E3637B23CFAFFE001EFDEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3637A23CFAFFE001EFDEA /* SceneDelegate.swift */; };
-		36E3637D23CFAFFE001EFDEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3637C23CFAFFE001EFDEA /* ViewController.swift */; };
 		36E3638023CFAFFE001EFDEA /* ThinUIMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E3637E23CFAFFE001EFDEA /* ThinUIMain.storyboard */; };
 		36E3638223CFB001001EFDEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E3638123CFB001001EFDEA /* Assets.xcassets */; };
 		36E3638523CFB001001EFDEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E3638323CFB001001EFDEA /* LaunchScreen.storyboard */; };
@@ -77,6 +77,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		364ACCF7234FA66B00260E25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 364ACCDA234FA66900260E25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364ACCE1234FA66900260E25;
+			remoteInfo = Clicker;
+		};
+		3671B4BF23EB146C00C56CC2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 364ACCDA234FA66900260E25 /* Project object */;
 			proxyType = 1;
@@ -126,6 +133,7 @@
 		366BB2B823E483B000310FE0 /* SelfHydratingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfHydratingViewController.swift; sourceTree = "<group>"; };
 		366BB2FB23E83FD500310FE0 /* CounterPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CounterPageViewController.xib; sourceTree = "<group>"; };
 		3671B4BA23EA280700C56CC2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3671B4BC23EAEAA500C56CC2 /* XCUIApplication+withView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+withView.swift"; sourceTree = "<group>"; };
 		36732EA923592DCE0050A066 /* HeadlessFunctionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadlessFunctionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36732EAD23592DCE0050A066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36732EB7235930290050A066 /* InMemoryCounterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCounterRepository.swift; sourceTree = "<group>"; };
@@ -145,7 +153,6 @@
 		36E3637623CFAFFE001EFDEA /* ThinUIHarness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinUIHarness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E3637823CFAFFE001EFDEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36E3637A23CFAFFE001EFDEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		36E3637C23CFAFFE001EFDEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36E3637F23CFAFFE001EFDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ThinUIMain.storyboard; sourceTree = "<group>"; };
 		36E3638123CFB001001EFDEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36E3638423CFB001001EFDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -328,7 +335,6 @@
 			children = (
 				36E3637823CFAFFE001EFDEA /* AppDelegate.swift */,
 				36E3637A23CFAFFE001EFDEA /* SceneDelegate.swift */,
-				36E3637C23CFAFFE001EFDEA /* ViewController.swift */,
 				36E3637E23CFAFFE001EFDEA /* ThinUIMain.storyboard */,
 				36E3638123CFB001001EFDEA /* Assets.xcassets */,
 				36E3638323CFB001001EFDEA /* LaunchScreen.storyboard */,
@@ -344,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				36E3638F23CFB001001EFDEA /* ThinUIHarnessUITests.swift */,
+				3671B4BC23EAEAA500C56CC2 /* XCUIApplication+withView.swift */,
 				36E3639123CFB001001EFDEA /* Info.plist */,
 			);
 			path = ThinUIHarnessUITests;
@@ -520,6 +527,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3671B4C023EB146C00C56CC2 /* PBXTargetDependency */,
 			);
 			name = ThinUIHarness;
 			productName = ThinUIHarness;
@@ -864,7 +872,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36E363AC23CFB640001EFDEA /* CounterViewModelType.swift in Sources */,
-				36E3637D23CFAFFE001EFDEA /* ViewController.swift in Sources */,
 				36E3639B23CFB117001EFDEA /* UILabelType.swift in Sources */,
 				36E363B023CFB83F001EFDEA /* MockCounterViewModel.swift in Sources */,
 				36E3637923CFAFFE001EFDEA /* AppDelegate.swift in Sources */,
@@ -882,6 +889,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3671B4BE23EAEB0800C56CC2 /* XCUIApplication+withView.swift in Sources */,
 				36E3639023CFB001001EFDEA /* ThinUIHarnessUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -903,6 +911,11 @@
 			isa = PBXTargetDependency;
 			target = 364ACCE1234FA66900260E25 /* Clicker */;
 			targetProxy = 364ACCF7234FA66B00260E25 /* PBXContainerItemProxy */;
+		};
+		3671B4C023EB146C00C56CC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 364ACCE1234FA66900260E25 /* Clicker */;
+			targetProxy = 3671B4BF23EB146C00C56CC2 /* PBXContainerItemProxy */;
 		};
 		36732EAF23592DCE0050A066 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
