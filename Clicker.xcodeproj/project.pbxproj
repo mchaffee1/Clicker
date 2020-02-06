@@ -50,7 +50,7 @@
 		36E3638023CFAFFE001EFDEA /* ThinUIMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E3637E23CFAFFE001EFDEA /* ThinUIMain.storyboard */; };
 		36E3638223CFB001001EFDEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E3638123CFB001001EFDEA /* Assets.xcassets */; };
 		36E3638523CFB001001EFDEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E3638323CFB001001EFDEA /* LaunchScreen.storyboard */; };
-		36E3639023CFB001001EFDEA /* ThinUIHarnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3638F23CFB001001EFDEA /* ThinUIHarnessUITests.swift */; };
+		36E3639023CFB001001EFDEA /* ThinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3638F23CFB001001EFDEA /* ThinUITests.swift */; };
 		36E3639B23CFB117001EFDEA /* UILabelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36732EC42360D5F00050A066 /* UILabelType.swift */; };
 		36E3639D23CFB1EE001EFDEA /* DependenciesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3639C23CFB1EE001EFDEA /* DependenciesType.swift */; };
 		36E363A023CFB232001EFDEA /* CounterViewModelProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3639F23CFB232001EFDEA /* CounterViewModelProviderType.swift */; };
@@ -155,8 +155,8 @@
 		36E3638123CFB001001EFDEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36E3638423CFB001001EFDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36E3638623CFB001001EFDEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36E3638B23CFB001001EFDEA /* ThinUIHarnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinUIHarnessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36E3638F23CFB001001EFDEA /* ThinUIHarnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinUIHarnessUITests.swift; sourceTree = "<group>"; };
+		36E3638B23CFB001001EFDEA /* Thin UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Thin UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E3638F23CFB001001EFDEA /* ThinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinUITests.swift; sourceTree = "<group>"; };
 		36E3639123CFB001001EFDEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36E3639C23CFB1EE001EFDEA /* DependenciesType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesType.swift; sourceTree = "<group>"; };
 		36E3639F23CFB232001EFDEA /* CounterViewModelProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModelProviderType.swift; sourceTree = "<group>"; };
@@ -267,7 +267,7 @@
 				36C4B816234FEB56003BC64C /* HeadlessFunctionalTests */,
 				363DF98223BBF30600869BD6 /* Wiremock */,
 				36E3637723CFAFFE001EFDEA /* ThinUIHarness */,
-				36E3638E23CFB001001EFDEA /* ThinUIHarnessUITests */,
+				36E3638E23CFB001001EFDEA /* Thin UI Tests */,
 				364ACCE3234FA66900260E25 /* Products */,
 				A477F140B15816340FCCF61F /* Pods */,
 				5E7CD1FCA6DC6EAA9B36A3FA /* Frameworks */,
@@ -282,7 +282,7 @@
 				36732EA923592DCE0050A066 /* HeadlessFunctionalTests.xctest */,
 				36FB852B23B5251A009F4A0E /* ClickerIntegrationTests.xctest */,
 				36E3637623CFAFFE001EFDEA /* ThinUIHarness.app */,
-				36E3638B23CFB001001EFDEA /* ThinUIHarnessUITests.xctest */,
+				36E3638B23CFB001001EFDEA /* Thin UI Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -343,14 +343,14 @@
 			path = ThinUIHarness;
 			sourceTree = "<group>";
 		};
-		36E3638E23CFB001001EFDEA /* ThinUIHarnessUITests */ = {
+		36E3638E23CFB001001EFDEA /* Thin UI Tests */ = {
 			isa = PBXGroup;
 			children = (
-				36E3638F23CFB001001EFDEA /* ThinUIHarnessUITests.swift */,
+				36E3638F23CFB001001EFDEA /* ThinUITests.swift */,
 				3671B4BC23EAEAA500C56CC2 /* XCUIApplication+withView.swift */,
 				36E3639123CFB001001EFDEA /* Info.plist */,
 			);
-			path = ThinUIHarnessUITests;
+			path = "Thin UI Tests";
 			sourceTree = "<group>";
 		};
 		36FB852C23B5251A009F4A0E /* ClickerIntegrationTests */ = {
@@ -531,9 +531,9 @@
 			productReference = 36E3637623CFAFFE001EFDEA /* ThinUIHarness.app */;
 			productType = "com.apple.product-type.application";
 		};
-		36E3638A23CFB001001EFDEA /* ThinUIHarnessUITests */ = {
+		36E3638A23CFB001001EFDEA /* Thin UI Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36E3639723CFB001001EFDEA /* Build configuration list for PBXNativeTarget "ThinUIHarnessUITests" */;
+			buildConfigurationList = 36E3639723CFB001001EFDEA /* Build configuration list for PBXNativeTarget "Thin UI Tests" */;
 			buildPhases = (
 				36E3638723CFB001001EFDEA /* Sources */,
 				36E3638823CFB001001EFDEA /* Frameworks */,
@@ -544,9 +544,9 @@
 			dependencies = (
 				36E3638D23CFB001001EFDEA /* PBXTargetDependency */,
 			);
-			name = ThinUIHarnessUITests;
+			name = "Thin UI Tests";
 			productName = ThinUIHarnessUITests;
-			productReference = 36E3638B23CFB001001EFDEA /* ThinUIHarnessUITests.xctest */;
+			productReference = 36E3638B23CFB001001EFDEA /* Thin UI Tests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		36FB852A23B5251A009F4A0E /* ClickerIntegrationTests */ = {
@@ -621,7 +621,7 @@
 				36FB852A23B5251A009F4A0E /* ClickerIntegrationTests */,
 				36732EA823592DCE0050A066 /* HeadlessFunctionalTests */,
 				36E3637523CFAFFE001EFDEA /* ThinUIHarness */,
-				36E3638A23CFB001001EFDEA /* ThinUIHarnessUITests */,
+				36E3638A23CFB001001EFDEA /* Thin UI Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -886,7 +886,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3671B4BE23EAEB0800C56CC2 /* XCUIApplication+withView.swift in Sources */,
-				36E3639023CFB001001EFDEA /* ThinUIHarnessUITests.swift in Sources */,
+				36E3639023CFB001001EFDEA /* ThinUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1229,14 +1229,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ThinUIHarnessUITests/Info.plist;
+				INFOPLIST_FILE = "Thin UI Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.chaf.ThinUIHarnessUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.chaf.ThinUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1249,14 +1249,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ThinUIHarnessUITests/Info.plist;
+				INFOPLIST_FILE = "Thin UI Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.chaf.ThinUIHarnessUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.chaf.ThinUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1354,7 +1354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36E3639723CFB001001EFDEA /* Build configuration list for PBXNativeTarget "ThinUIHarnessUITests" */ = {
+		36E3639723CFB001001EFDEA /* Build configuration list for PBXNativeTarget "Thin UI Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36E3639423CFB001001EFDEA /* Debug */,
