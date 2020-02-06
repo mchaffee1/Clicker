@@ -47,7 +47,6 @@
 		36C4B815234FEADB003BC64C /* MockCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B814234FEADB003BC64C /* MockCounterViewModel.swift */; };
 		36C4B81C2350A885003BC64C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4B81B2350A885003BC64C /* main.swift */; };
 		36E3637923CFAFFE001EFDEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3637823CFAFFE001EFDEA /* AppDelegate.swift */; };
-		36E3638023CFAFFE001EFDEA /* ThinUIMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E3637E23CFAFFE001EFDEA /* ThinUIMain.storyboard */; };
 		36E3638223CFB001001EFDEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E3638123CFB001001EFDEA /* Assets.xcassets */; };
 		36E3638523CFB001001EFDEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E3638323CFB001001EFDEA /* LaunchScreen.storyboard */; };
 		36E3639023CFB001001EFDEA /* ThinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3638F23CFB001001EFDEA /* ThinUITests.swift */; };
@@ -151,7 +150,6 @@
 		36D4A7FE2358FF9B00E0BC48 /* CounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTests.swift; sourceTree = "<group>"; };
 		36E3637623CFAFFE001EFDEA /* ThinUIHarness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinUIHarness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E3637823CFAFFE001EFDEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36E3637F23CFAFFE001EFDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ThinUIMain.storyboard; sourceTree = "<group>"; };
 		36E3638123CFB001001EFDEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36E3638423CFB001001EFDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36E3638623CFB001001EFDEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -319,6 +317,15 @@
 			path = ClickerTests;
 			sourceTree = "<group>";
 		};
+		366486A223EC993300F533B3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				36E363AE23CFB83F001EFDEA /* MockCounterViewModel.swift */,
+				36E363A423CFB4DC001EFDEA /* Dependencies.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		36C4B816234FEB56003BC64C /* HeadlessFunctionalTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,14 +338,12 @@
 		36E3637723CFAFFE001EFDEA /* ThinUIHarness */ = {
 			isa = PBXGroup;
 			children = (
+				366486A223EC993300F533B3 /* Mocks */,
+				366BB2B623E398C300310FE0 /* main.swift */,
 				36E3637823CFAFFE001EFDEA /* AppDelegate.swift */,
-				36E3637E23CFAFFE001EFDEA /* ThinUIMain.storyboard */,
-				36E3638123CFB001001EFDEA /* Assets.xcassets */,
 				36E3638323CFB001001EFDEA /* LaunchScreen.storyboard */,
 				36E3638623CFB001001EFDEA /* Info.plist */,
-				36E363A423CFB4DC001EFDEA /* Dependencies.swift */,
-				36E363AE23CFB83F001EFDEA /* MockCounterViewModel.swift */,
-				366BB2B623E398C300310FE0 /* main.swift */,
+				36E3638123CFB001001EFDEA /* Assets.xcassets */,
 			);
 			path = ThinUIHarness;
 			sourceTree = "<group>";
@@ -658,7 +663,6 @@
 				36E3638523CFB001001EFDEA /* LaunchScreen.storyboard in Resources */,
 				36E3638223CFB001001EFDEA /* Assets.xcassets in Resources */,
 				366B8BC923E8858E00A1D33B /* CounterPageViewController.xib in Resources */,
-				36E3638023CFAFFE001EFDEA /* ThinUIMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,14 +935,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		36E3637E23CFAFFE001EFDEA /* ThinUIMain.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				36E3637F23CFAFFE001EFDEA /* Base */,
-			);
-			name = ThinUIMain.storyboard;
-			sourceTree = "<group>";
-		};
 		36E3638323CFB001001EFDEA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

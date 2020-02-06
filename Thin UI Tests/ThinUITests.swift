@@ -1,7 +1,7 @@
 import XCTest
 @testable import ThinUIHarness
 
-class ThinUIHarnessUITests: XCTestCase {
+class ThinUITests: XCTestCase {
     var app: XCUIApplication!
 
     override func setUp() {
@@ -12,9 +12,7 @@ class ThinUIHarnessUITests: XCTestCase {
         continueAfterFailure = false
     }
 
-    func testExample() {
-        // UI tests must launch the application that they test.
-
+    func testCounterShouldIncrementOnTap() {
         tapCoordinate(in: app, atX: 100.0, andY: 200.0)
         app.staticTexts["43"].tap()
         app.staticTexts["44"].tap()
